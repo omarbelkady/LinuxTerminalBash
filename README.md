@@ -138,41 +138,41 @@ $ chmod
 
 ### Display all the ip and mac addresses within your network in a table structure
 ```bash
-# arp -a
+$ arp -a
 ```
 
 ### How to find your mac address
 ```bash
-ifconfig
+$ ifconfig
 ```
 ### Display Your mac address
 ```bash
-macchanger -s eth0
+$ macchanger -s eth0
 ```
 
 ### Random Mac Address Setter
 ```bash
-macchanger -r eth0
+$ macchanger -r eth0
 ```
 
 ### Sorted order of your mac address
 ```bash
-ifconfig | grep ether
+$ ifconfig | grep ether
 ```
 
 ### How to know which command you can run on the specific file
 ```bash
-cat
+$ cat
 ```
 
 
 ### Rebot From the Terminal
 ```bash
-reboot
+$ reboot
 ```
 
 ### Kill all Subprocesses
 ```bash
-airmon-ng check kill
+$ airmon-ng check kill
 ```
 
