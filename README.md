@@ -48,8 +48,10 @@ displays calendar for the 2020 year
 ### man 
 displays manual for all the possible commands you can run
 
-### pwd
-print working directory
+### print working directory
+```bash
+pwd
+```
 
 ### go back 1 directory
 ```bash
