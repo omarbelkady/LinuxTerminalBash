@@ -46,79 +46,87 @@ creates a 2nd shell below not to the side
 ### tab
 autocomplete
 
-### date
-displays current date
+### displays current date
+```bash
+$ date
+```
 
-### cal
-displays calendar
+### displays calendar
+```bash
+$ cal
+```
 
-### cal 2020
-displays calendar for the 2020 year
+###  displays calendar for the 2020 year
+```bash
+$ cal 2020
+```
 
-### man 
-displays manual for all the possible commands you can run
+### displays manual for all the possible commands you can run
+```bash
+$ man
+```
 
 ### print working directory
 ```bash
-pwd
+$ pwd
 ```
 
 ### go back 1 directory
 ```bash
-cd .. 
+$ cd .. 
 ```
 
 ### go back 2 directory
 ```bash
-cd ../.. 
+$ cd ../.. 
 ```
 
 ### execute the file
 ```bash
-./
+$ ./
 ```
 
 ### create a directory
 ```bash
-mkdir
+$ mkdir
 ```
 
 ### remove a filled directory but keep the subdirectories
 ```bash
-rm -r
+$ rm -r
 ```
 
 ### remove a filled directory and the subdirectories
 ```bash
-rm -rf ⇒ 
+$ rm -rf ⇒ 
 ```
 ### install the tree command within the terminal
 ```bash
-brew install tree 
+$ brew install tree 
 ```
 
 ### create a file
 ```bash
-touch [filename]
+$ touch [filename]
 ```
 ### Copy
 cp *.extension examples ⇒ copy all the files with the specified extension ino the examples directory
 ```bash
-cp *.txt pathtothedirectory
+$ cp *.txt pathtothedirectory
 ```
 
 ### Run a Recursive search in a directory for a specific string 
 ```bash
-grep -r "END" examples
+$ grep -r "END" examples
 ```
 The above command will run a recursive search in my examples directory for any file that has the word END in it
 
 ### Display all the commands committed as history
 ```bash
-history | grep "grep" 
+$ history | grep "grep" 
 ```
 
 ### To run a command in history
 ```bash
-![historyNumber]
+$ ![historyNumber]
 ```
