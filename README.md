@@ -98,7 +98,7 @@ $ rm -r
 
 ### remove a filled directory and the subdirectories
 ```bash
-$ rm -rf ⇒ 
+$ rm -rf
 ```
 ### install the tree command within the terminal
 ```bash
