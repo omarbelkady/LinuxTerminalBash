@@ -8,8 +8,7 @@ $ pwd
 $ ls
 ```
 
-### cd
-Change directory to home 
+### Change directory to home 
 ```bash
 $ cd ~
 ```
