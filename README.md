@@ -130,3 +130,49 @@ $ history | grep "grep"
 ```bash
 $ ![historyNumber]
 ```
+
+### Change the file permission or as written change access modes
+```bash
+$ chmod
+```
+
+### Display all the ip and mac addresses within your network in a table structure
+```bash
+# arp -a
+```
+
+### How to find your mac address
+```bash
+ifconfig
+```
+### Display Your mac address
+```bash
+macchanger -s eth0
+```
+
+### Random Mac Address Setter
+```bash
+macchanger -r eth0
+```
+
+### Sorted order of your mac address
+```bash
+ifconfig | grep ether
+```
+
+### How to know which command you can run on the specific file
+```bash
+cat
+```
+
+
+### Rebot From the Terminal
+```bash
+reboot
+```
+
+### Kill all Subprocesses
+```bash
+airmon-ng check kill
+```
+
