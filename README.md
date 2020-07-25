@@ -1,23 +1,33 @@
 
 ### Print Working Directory
-pwd
-
-### ls
-show the files in the working directory 
+```bash
+$ pwd
+```
+### show the files in the working directory
+```bash
+$ ls
+```
 
 ### cd
-Change directory to home e.g. cd ~
-
-### whoami
-Shows the current authenticated user 
+Change directory to home 
+```bash
+$ cd ~
+```
+### Shows the current authenticated user 
+```bash
+$ whoami
+```
 
 ### echo
-Prints..... echo "Nelan 56837 6342"
-
+Prints..... 
+```bash
+$ echo "Nelan 56837 6342"
+```
 ### alias
 Map a command to another command
+```bash
 alias home='cd ~'
-
+```
 ### alt+f
 go forward between one word to the next word in your command
 
@@ -73,18 +83,42 @@ cd ../..
 mkdir
 ```
 
-### rm -r
-remove a filled directory but keep the subdirectories
-rm -rf ⇒ remove a filled directory and the subdirectories
-brew install tree ⇒ install the tree command within the terminal
-touch ⇒ create a file
-cat query.sql ⇒ open the query.sql file
-head query.sql ⇒ see the first 10 lines of text of the query.sql file
-tail query.sql ⇒ see the last 10 lines of text of the query.sql file
-head tail query.sql ⇒ see the full file
-cp query.sql query-copy.sql ⇒ copy the contents of the query.sql file into the query-copy.sql and keep the query.sql file intact
+### remove a filled directory but keep the subdirectories
+```bash
+rm -r
+```
+
+### remove a filled directory and the subdirectories
+```bash
+rm -rf ⇒ 
+```
+### install the tree command within the terminal
+```bash
+brew install tree 
+```
+
+### create a file
+```bash
+touch [filename]
+```
+### Copy
 cp *.extension examples ⇒ copy all the files with the specified extension ino the examples directory
-tree examples ⇒ shows the structure of the examples directory
-grep -r "END" examples ⇒ run a recursive search in my examples directory for any file that has the word END in it
-history | grep "grep" ⇒ display all the actions I committed with the grep command
-curl -0 httpLink.html ⇒ transfer data from or to a server from the specified protocol
+```bash
+cp *.txt pathtothedirectory
+```
+
+### Run a Recursive search in a directory for a specific string 
+```bash
+grep -r "END" examples
+```
+The above command will run a recursive search in my examples directory for any file that has the word END in it
+
+### Display all the commands committed as history
+```bash
+history | grep "grep" 
+```
+
+### To run a command in history
+```bash
+![historyNumber]
+```
