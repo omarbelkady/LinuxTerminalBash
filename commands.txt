@@ -27,7 +27,6 @@ grep -r "END" examples ⇒ run a recursive search in my examples directory for a
 history | grep "grep" ⇒ display all the actions I committed with the grep command
 curl -0 httpLink.html ⇒ transfer data from or to a server from the specified protocol
 ifconfig - display the ip address
-ifconfig [interface name] up/down - I place the interface name and follow with up(to turn it on) or down(to turn it off)
-ASSIGN AN IP TO AN INTERFACE - ifconfig [interface_name] [ip_you_wish_to assign]
-ip addr show - show all the ip addresses in your network and with their associated interfaces
-
+ifconfig [interface name] up/down ⇒ I place the interface name and follow with up(to turn it on) or down(to turn it off)
+ASSIGN AN IP TO AN INTERFACE ⇒ ifconfig [interface_name] [ip_you_wish_to assign]
+ip addr show ⇒ show all the ip addresses in your network and with their associated interfaces
