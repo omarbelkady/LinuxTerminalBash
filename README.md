@@ -7,6 +7,9 @@ $ d ==> Cuts till that point
 $ y ==> Copy
 $ P ==> Paste before the cursor
 $ p ==> Paste after the cursor
+$ :set number ==> display line number
+$ :w ==> write to the file
+$ i ==> toggle insert/command mode
 ```
 
 
