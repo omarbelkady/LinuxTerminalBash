@@ -14,11 +14,6 @@ $ i ==> toggle insert/command mode
 
 
 
-
-### Print Working Directory
-```bash
-$ pwd
-```
 ### show the files in the working directory
 ```bash
 $ ls
@@ -28,6 +23,26 @@ $ ls
 ```bash
 $ cd ~
 ```
+### print working directory
+```bash
+$ pwd
+```
+
+### return to the previous directory
+```bash
+$ cd - 
+```
+
+### go up 1 directory
+```bash
+$ cd .. 
+```
+
+### go back 2 directories
+```bash
+$ cd ../.. 
+```
+
 ### Shows the current authenticated user 
 ```bash
 $ whoami
@@ -81,20 +96,7 @@ $ cal 2020
 $ man
 ```
 
-### print working directory
-```bash
-$ pwd
-```
 
-### go back 1 directory
-```bash
-$ cd .. 
-```
-
-### go back 2 directory
-```bash
-$ cd ../.. 
-```
 
 ### execute the file
 ```bash
@@ -191,36 +193,18 @@ $ reboot
 $ airmon-ng check kill
 ```
 
-# Terminal Cheat Sheet
+## Git
 
-pwd         # print working directory
-ls          # list files in directory
-cd          # change directory
-~           # home directory
-..          # up one directory
--           # previous working directory
-help        # get help
--h          # get help
---help      # get help
-man         # manual
-cat         # output the contents of a file
-mkdir       # create new directory
-open        # open a file with the associated program, a directory with Finder, or a URL with the default web browser
-ps          # list all running processes
-kill        # terminate existing process
-rmd         # permanently delete file
-rmdir       # remove directory
-
-
-
-
-
-##  Git
-
-### Clone directory
+### How To Clone A directory
 ```git
 git clone <url> 
 ``` 
+### Create New Branch
+```git
+git checkout -b <nameOfNewBranch
+```
+
+
 git checkout -b <new-branch> 		# Create new local branch
 git push -u origin <new-branch> 	# Sync local branch with remote
 git checkout <branch> 				# Checkout branch
@@ -264,6 +248,27 @@ git branch -m <newname>             # rename current branch
 git branch -d <branchname>   	# deletes local branch
 git push origin :<branchname>	# deletes remote branch
 git remote prune <branchname>	# update local/remote sync
+
+
+
+
+
+
+help        # get help
+-h          # get help
+--help      # get help
+man         # manual
+cat         # output the contents of a file
+mkdir       # create new directory
+open        # open a file with the associated program, a directory with Finder, or a URL with the default web browser
+ps          # list all running processes
+kill        # terminate existing process
+rmd         # permanently delete file
+rmdir       # remove directory
+
+
+
+
 
 
 
