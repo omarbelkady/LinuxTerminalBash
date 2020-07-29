@@ -183,7 +183,7 @@ $ cat
 ```
 
 
-### Rebot From the Terminal
+### Reboot From the Terminal
 ```bash
 $ reboot
 ```
@@ -199,37 +199,46 @@ $ airmon-ng check kill
 ```git
 git clone <url> 
 ``` 
-### Create New Branch
+### Create New Branch LOCALLY
 ```git
 git checkout -b <nameOfNewBranch
 ```
 
+### Get your local branch meaning what you have in your machine to agree with your remote branch(branch on GitHub) usually master IF YOU ARE PM
+```git
+git push origin <nameOfBranch>
+```
 
-git checkout -b <new-branch> 		# Create new local branch
-git push -u origin <new-branch> 	# Sync local branch with remote
-git checkout <branch> 				# Checkout branch
-git push origin <branch> 			# Push branch to remote
+### Goto a different branch
+```git
+git checkout <nameofBranch>
+```
 
-git branch -d <branchname>   	# deletes local branch
-git push origin :<branchname>	# deletes remote branch
+### Delete the remote branch(branch on GH)
+```git
+git push origin :nameOfBranch
+```
 
-git subtree push --prefix docs origin gh-pages  # push docs as subtree to gh-pages
-
-
-
-### Clone Directory
-git clone <url>
-
-
-
-### Create Project
-cd project/
-git init                    # initializes the repository
-git add .                   # add those 'unknown' files
-git commit                  # commit all changes, edit changelog entry
-git rm --cached <file>...   # ridiculously complicated command to undo, in case you forgot .gitignore
+### Delete the local branch(branch on your local machine aka computer)
+```git
+git branch -d <nameOfBranch>
+```
 
 
+### Steps To Create A Create Project
+
+#### 1- Initialize An Empty Repository
+```git
+git init
+```
+#### 2- Add all the files to be staged
+```git
+git add .
+```
+#### 3- Commit the files use -m to be respectful to your peers to log what you are doing
+```
+git commit
+```
 
 ### Branching and Merging
 git branch                          # show list of all branches (* is active)
