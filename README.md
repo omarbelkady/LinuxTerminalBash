@@ -43,6 +43,7 @@ $ rm -r
 ### remove a filled directory and the subdirectories
 ```bash
 $ rm -rf
+```
 
 ### print working directory
 ```bash
@@ -122,7 +123,7 @@ $ man
 $ ./
 ```
 
-```
+
 ### install the tree command within the terminal
 ```bash
 $ brew install tree 
