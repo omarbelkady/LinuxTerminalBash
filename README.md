@@ -279,22 +279,22 @@ git branch -d <nameofBranch>
 
 ##### 2- Delete The Remote branch
 ```git
-git push origin :<nameofBranch>
+$ git push origin :<nameofBranch>
 ```
 
 ##### 3- Sync your local changes with your remote changes
 ```git
-git remote prune <nameofBranch>
+$ git remote prune <nameofBranch>
 ```
 
 
 ### Comparing Revisions
 #### Show the difference between master branch(locally) and master branch(remote-GitHub)
 ```git
-git diff origin..master
+$ git diff origin..master
 ```
 
 #### Show the difference between work that has been committed and not been committed
 ```git
-git diff --stat HEAD
+$ git diff --stat HEAD
 ```
