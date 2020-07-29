@@ -1,3 +1,16 @@
+#### Vim
+```
+$ v ==> Copy the character
+$ V ==> Copy the entire line
+Move the cursor to the end where you want to cut
+$ d ==> Cuts till that point
+$ y ==> Copy
+$ P ==> Paste before the cursor
+$ p ==> Paste after the cursor
+```
+
+
+
 
 ### Print Working Directory
 ```bash
