@@ -295,6 +295,6 @@ $ git diff origin..master
 ```
 
 #### Show the difference between work that has been committed and not been committed
-```bash
+```git bash
 $ git diff --stat HEAD
 ```
