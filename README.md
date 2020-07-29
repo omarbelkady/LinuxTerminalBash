@@ -13,7 +13,7 @@ $ i ==> toggle insert/command mode
 ```
 
 ### show the files in the working directory
-```bash
+```linux
 $ ls
 ```
 ### Stop an existing process
