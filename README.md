@@ -138,7 +138,7 @@ $ cp *.txt pathtothedirectory
 ```bash
 $ cp *.extension examples
 ```
-### Example I am copying all the executables file within my working directory into the examples directory
+### Example: I am copying all the executable(.exe) files within my working directory into the examples directory
 ```bash
 $ cp *.exe examples
 ```
