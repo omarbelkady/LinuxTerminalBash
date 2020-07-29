@@ -76,23 +76,23 @@ Map a command to another command
 ```bash
 alias home='cd ~'
 ```
-### alt+f
-go forward between one word to the next word in your command
+### go forward between one word to the next word in your command
+alt+f
 
-### alt+b
-go backward between one word to the next word in your command
+### go backward between one word to the next word in your command
+alt+b
 
-### ctrl+c
-cancels current command
+### cancels current command
+ctrl+c
 
-### ctrl+d
-creates a 2nd shell side by side
+### creates a 2nd shell side by side
+ctrl+d
 
-### cmd+shift+d
-creates a 2nd shell below not to the side
+### creates a 2nd shell below not to the side
+cmd+shift+d
 
-### tab
-autocomplete
+### autocomplete
+tab
 
 ### displays current date
 ```bash
@@ -130,9 +130,17 @@ $ brew install tree
 $ touch [filename]
 ```
 ### Copy
-cp *.extension examples ⇒ copy all the files with the specified extension ino the examples directory
 ```bash
 $ cp *.txt pathtothedirectory
+```
+
+### copy all the files with the specified extension ino the examples directory
+```bash
+$ cp *.extension examples
+```
+### Example I am copying all the executables file within my working directory into the examples directory
+```bash
+$ cp *.exe examples
 ```
 
 ### Run a Recursive search in a directory for a specific string 
