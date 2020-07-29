@@ -20,10 +20,6 @@ $ ls
 ```bash
 kill
 ```
-### Permanently delete a file
-```bash
-rmd
-```
 
 ### Change directory to home 
 ```bash
