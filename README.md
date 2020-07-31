@@ -1,3 +1,4 @@
+
 #### Vim
 ```
 $ v ==> Copy the character
@@ -13,17 +14,13 @@ $ i ==> toggle insert/command mode
 ```
 
 ### show the files in the working directory
-```linux
+```bash
 $ ls
 ```
+
 ### Stop an existing process
 ```bash
 kill
-```
-
-### Change directory to home 
-```bash
-$ cd ~
 ```
 
 ### create a directory
@@ -46,9 +43,9 @@ $ rm -rf
 $ pwd
 ```
 
-### return to the previous directory
+### Change directory to home 
 ```bash
-$ cd - 
+$ cd ~
 ```
 
 ### go up 1 directory
@@ -74,7 +71,8 @@ $ echo "Nelan 56837 6342"
 ### alias
 Map a command to another command
 ```bash
-alias home='cd ~'
+$ alias home='cd ~'
+$ alias ll='ls -al'
 ```
 ### go forward between one word to the next word in your command
 alt+f
@@ -161,7 +159,7 @@ $ ![historyNumber]
 
 ### Change the file permission or as written change access modes
 ```bash
-$ chmod
+$ chmod [permission] [fileName]
 ```
 
 ### Display all the ip and mac addresses within your network in a table structure
