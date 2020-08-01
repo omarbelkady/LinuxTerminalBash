@@ -49,8 +49,8 @@ root@omarbelkady:~$ cd ~
 ```
 
 ### go up 1 directory
-```bash
-$ cd .. 
+``````console bash
+root@omarbelkady:~$ cd .. 
 ```
 
 ### go back 2 directories
