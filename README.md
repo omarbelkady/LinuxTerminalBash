@@ -24,7 +24,7 @@ kill
 ```
 
 ### create a directory
-```bash
+```console
 $ mkdir
 ```
 
