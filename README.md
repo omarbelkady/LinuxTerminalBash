@@ -29,23 +29,23 @@ root@omarbelkady:~$ mkdir
 ```
 
 ### remove a filled directory but keep the subdirectories
-```bash
-$ rm -r
+```console
+root@omarbelkady:~$ rm -r
 ```
 
 ### remove a filled directory and the subdirectories
-```bash
-$ rm -rf
+```console
+root@omarbelkady:~$ rm -rf
 ```
 
 ### print working directory
-```bash
-$ pwd
+```console
+root@omarbelkady:~$ pwd
 ```
 
 ### Change directory to home 
 ```bash
-$ cd ~
+root@omarbelkady:~$ cd ~
 ```
 
 ### go up 1 directory
