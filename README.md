@@ -44,7 +44,7 @@ root@omarbelkady:~$ pwd
 ```
 
 ### Change directory to home 
-```bash
+```console
 root@omarbelkady:~$ cd ~
 ```
 
