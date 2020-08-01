@@ -19,13 +19,13 @@ root@omarbelkady:~$ ls
 ```
 
 ### Stop an existing process
-```bash
-kill
+```console
+root@omarbelkady:~$ kill
 ```
 
 ### create a directory
 ```console
-$ mkdir
+root@omarbelkady:~$ mkdir
 ```
 
 ### remove a filled directory but keep the subdirectories
