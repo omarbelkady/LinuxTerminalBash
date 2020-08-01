@@ -120,6 +120,7 @@ $ ./
 ```
 
 
+
 ### install the tree command within the terminal
 ```bash
 $ brew install tree 
@@ -129,6 +130,7 @@ $ brew install tree
 ```bash
 $ touch [filename]
 ```
+
 ### Copy
 ```bash
 $ cp *.txt pathtothedirectory
@@ -138,6 +140,7 @@ $ cp *.txt pathtothedirectory
 ```bash
 $ cp *.extension examples
 ```
+
 ### Example: I am copying all the executable(.exe) files within my working directory into the examples directory
 ```bash
 $ cp *.exe examples
@@ -147,6 +150,7 @@ $ cp *.exe examples
 ```bash
 $ grep -r "END" examples
 ```
+
 The above command will run a recursive search in my examples directory for any file that has the word END in it
 
 ### Display all the commands committed as history
@@ -173,6 +177,7 @@ $ arp -a
 ```bash
 $ ifconfig
 ```
+
 ### Display Your mac address
 ```bash
 $ macchanger -s eth0
@@ -209,6 +214,7 @@ $ airmon-ng check kill
 ```git
 git clone <url> 
 ``` 
+
 ### Create New Branch LOCALLY
 ```git
 git checkout -b <nameOfNewBranch>
