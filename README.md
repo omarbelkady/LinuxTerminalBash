@@ -268,19 +268,19 @@ git merge features
 
 #### Rename a branch
 ```git
-git branch -m <OLD> <NEW>
+$ git branch -m <OLD> <NEW>
 ```
 
 #### To rename say, for example omar which I am currently working on
-```git
-git branch -m ramo
+```bash
+$ git branch -m ramo
 ```
 
 
 #### How To Delete Project
 ##### 1- Delete The Local branch
-```git
-git branch -d <nameofBranch>
+```bash
+$ git branch -d <nameofBranch>
 ```
 
 ##### 2- Delete The Remote branch
@@ -296,7 +296,7 @@ $ git remote prune <nameofBranch>
 
 ### Comparing Revisions
 #### Show the difference between master branch(locally) and master branch(remote-GitHub)
-```git
+```bash
 $ git diff origin..master
 ```
 
