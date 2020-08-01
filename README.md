@@ -14,8 +14,8 @@ $ i ==> toggle insert/command mode
 ```
 
 ### show the files in the working directory
-```bash
-$ ls
+```console
+root@omarbelkady:~$ ls
 ```
 
 ### Stop an existing process
