@@ -59,7 +59,7 @@ root@omarbelkady:~$ cd ../..
 ```
 
 ### Shows the current authenticated user 
-```console
+```bash
 root@omarbelkady:~$ whoami
 ```
 
