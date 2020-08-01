@@ -49,18 +49,18 @@ root@omarbelkady:~$ cd ~
 ```
 
 ### go up 1 directory
-``````console bash
+``````console
 root@omarbelkady:~$ cd .. 
 ```
 
 ### go back 2 directories
-```bash
-$ cd ../.. 
+```console
+root@omarbelkady:~$ cd ../.. 
 ```
 
 ### Shows the current authenticated user 
-```bash
-$ whoami
+```console
+root@omarbelkady:~$ whoami
 ```
 
 ### echo
@@ -68,12 +68,14 @@ Prints.....
 ```bash
 $ echo "Nelan 56837 6342"
 ```
+
 ### alias
 Map a command to another command
 ```bash
 $ alias home='cd ~'
 $ alias ll='ls -al'
 ```
+
 ### go forward between one word to the next word in your command
 alt+f
 
