@@ -60,7 +60,7 @@ root@omarbelkady:~$ cd ../..
 
 ### Shows the current authenticated user 
 ```bash
-root@omarbelkady:~$ whoami
+$ whoami
 ```
 
 ### echo
