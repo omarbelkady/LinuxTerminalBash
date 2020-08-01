@@ -49,7 +49,7 @@ root@omarbelkady:~$ cd ~
 ```
 
 ### go up 1 directory
-``````console
+```console
 root@omarbelkady:~$ cd .. 
 ```
 
