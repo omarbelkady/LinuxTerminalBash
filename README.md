@@ -1,4 +1,5 @@
-
+https://github.com/omarbelkady/Linux/issues/1#issuecomment-667776781
+https://github.com/omarbelkady/Linux/issues/1#issue-671758330
 #### Vim
 ```
 $ v ==> Copy the character
