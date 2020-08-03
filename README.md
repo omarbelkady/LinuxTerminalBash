@@ -1,6 +1,5 @@
-![Alt text](/31806568/89141725-5391b200-d53d-11ea-8a35-0d81bc524461.png "How To Deploy")
-![Alt_text](/31806568/89141652-1b8a6f00-d53d-11ea-9312-3431d471ea1c.png "How To DeployP2")
 
+![HOW_TO_DEPLY](https://raw.github.com/omarbelkady/Linux/issues/1#issue-671758330)
 #### Vim
 ```
 $ v ==> Copy the character
