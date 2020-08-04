@@ -62,20 +62,20 @@ root@omarbelkady:~$ cd ../..
 
 ### Shows the current authenticated user 
 ```bash
-$ whoami
+root@omarbelkady:~$ whoami
 ```
 
 ### echo
 Prints..... 
 ```bash
-$ echo "Nelan 56837 6342"
+root@omarbelkady:~$ echo "Nelan 56837 6342"
 ```
 
 ### alias
 Map a command to another command
 ```bash
-$ alias home='cd ~'
-$ alias ll='ls -al'
+root@omarbelkady:~$ alias home='cd ~'
+root@omarbelkady:~$ alias ll='ls -al'
 ```
 
 ### go forward between one word to the next word in your command
@@ -98,116 +98,116 @@ tab
 
 ### displays current date
 ```bash
-$ date
+root@omarbelkady:~$ date
 ```
 
 ### displays calendar
 ```bash
-$ cal
+root@omarbelkady:~$ cal
 ```
 
 ###  displays calendar for the 2020 year
 ```bash
-$ cal 2020
+root@omarbelkady:~$ cal 2020
 ```
 
 ### displays manual for all the possible commands you can run
 ```bash
-$ man
+root@omarbelkady:~$ man
 ```
 
 ### execute the file
 ```bash
-$ ./
+root@omarbelkady:~$ ./
 ```
 
 
 
 ### install the tree command within the terminal
 ```bash
-$ brew install tree 
+root@omarbelkady:~$ brew install tree 
 ```
 
 ### create a file
 ```bash
-$ touch [filename]
+root@omarbelkady:~$ touch [filename]
 ```
 
 ### Copy
 ```bash
-$ cp *.txt pathtothedirectory
+root@omarbelkady:~$ cp *.txt pathtothedirectory
 ```
 
 ### copy all the files with the specified extension ino the examples directory
 ```bash
-$ cp *.extension examples
+root@omarbelkady:~$ cp *.extension examples
 ```
 
 ### Example: I am copying all the executable(.exe) files within my working directory into the examples directory
 ```bash
-$ cp *.exe examples
+root@omarbelkady:~$ cp *.exe examples
 ```
 
 ### Run a Recursive search in a directory for a specific string 
 ```bash
-$ grep -r "END" examples
+root@omarbelkady:~$ grep -r "END" examples
 ```
 
 The above command will run a recursive search in my examples directory for any file that has the word END in it
 
 ### Display all the commands committed as history
 ```bash
-$ history | grep "grep" 
+root@omarbelkady:~$ history | grep "grep" 
 ```
 
 ### To run a command in history
 ```bash
-$ ![historyNumber]
+root@omarbelkady:~$ ![historyNumber]
 ```
 
 ### Change the file permission or as written change access modes
 ```bash
-$ chmod [permission] [fileName]
+root@omarbelkady:~$ chmod [permission] [fileName]
 ```
 
 ### Display all the ip and mac addresses within your network in a table structure
 ```bash
-$ arp -a
+root@omarbelkady:~$ arp -a
 ```
 
 ### How to find your mac address
 ```bash
-$ ifconfig
+root@omarbelkady:~$ ifconfig
 ```
 
 ### Display Your mac address
 ```bash
-$ macchanger -s eth0
+root@omarbelkady:~$ macchanger -s eth0
 ```
 
 ### Random Mac Address Setter
 ```bash
-$ macchanger -r eth0
+root@omarbelkady:~$ macchanger -r eth0
 ```
 
 ### Sorted order of your mac address
 ```bash
-$ ifconfig | grep ether
+root@omarbelkady:~$ ifconfig | grep ether
 ```
 
 ### How to know which command you can run on the specific file
 ```bash
-$ cat
+root@omarbelkady:~$ cat
 ```
 
 ### Reboot From the Terminal
 ```bash
-$ reboot
+root@omarbelkady:~$ reboot
 ```
 
 ### Kill all Subprocesses
 ```bash
-$ airmon-ng check kill
+root@omarbelkady:~$ airmon-ng check kill
 ```
 
 ## Git
@@ -321,61 +321,61 @@ Step 1: launch Apache web server
 # service apache2 status
 ~~~
 ```bash
-$ nmap -sT 192.168.1.27 4444
+root@omarbelkady:~$ nmap -sT 192.168.1.27 4444
 ```
 
 Step 2: Check if port 4444 opened
 ```bash
-$ netstat -an | find "4444"
+root@omarbelkady:~$ netstat -an | find "4444"
 ```
 Step 3: Check if port 4444 opened
 ```bash
-$ nmap -sT 192.168.1.27
+root@omarbelkady:~$ nmap -sT 192.168.1.27
 ```
 
 Step 4: Gain Access
 
 ```bash
-$ nc 192.168.1.27 4444
+root@omarbelkady:~$ nc 192.168.1.27 4444
 ```
 
 Step 5: List Directories
 ```bash
-$ dir
+root@omarbelkady:~$ dir
 ```
 
 Step 6: List the system details
 ```bash
-$ systeminfo
+root@omarbelkady:~$ systeminfo
 ```
 
 Step 7: Find the hostname
 ```bash
-$ hostname
+root@omarbelkady:~$ hostname
 ```
 
 Step 8: Find the users in the environment
 ```bash
-$ net users
+root@omarbelkady:~$ net users
 ```
 
 Step 8 a: Find the ip address of everyone
 ```bash
-$ ipconfig/all
+root@omarbelkady:~$ ipconfig/all
 ```
 
 
 Step 9: Detect systems in the environment
 ```bash
-$ route print
+root@omarbelkady:~$ route print
 ```
 
 Step 10: Search for vulnerable devices
 ```bash
-$ netstat -ano
+root@omarbelkady:~$ netstat -ano
 ```
 
 Step 11: Search for open ports that are enabled
 ```bash
-$ netsh firewall show state
+root@omarbelkady:~$ netsh firewall show state
 ```
