@@ -321,61 +321,61 @@ Step 1: launch Apache web server
 # service apache2 status
 ~~~
 ```bash
-nmap -sT 192.168.1.27 4444
+$ nmap -sT 192.168.1.27 4444
 ```
 
 Step 2: Check if port 4444 opened
 ```bash
-netstat -an | find "4444"
+$ netstat -an | find "4444"
 ```
 Step 3: Check if port 4444 opened
 ```bash
-nmap -sT 192.168.1.27
+$ nmap -sT 192.168.1.27
 ```
 
 Step 4: Gain Access
 
 ```bash
-nc 192.168.1.27 4444
+$ nc 192.168.1.27 4444
 ```
 
 Step 5: List Directories
 ```bash
-dir
+$ dir
 ```
 
 Step 6: List the system details
 ```bash
-systeminfo
+$ systeminfo
 ```
 
 Step 7: Find the hostname
 ```bash
-hostname
+$ hostname
 ```
 
 Step 8: Find the users in the environment
 ```bash
-net users
+$ net users
 ```
 
 Step 8 a: Find the ip address of everyone
 ```bash
-ipconfig/all
+$ ipconfig/all
 ```
 
 
 Step 9: Detect systems in the environment
 ```bash
-route print
+$ route print
 ```
 
 Step 10: Search for vulnerable devices
 ```bash
-netstat -ano
+$ netstat -ano
 ```
 
 Step 11: Search for open ports that are enabled
 ```bash
-netsh firewall show state
+$ netsh firewall show state
 ```
