@@ -122,7 +122,6 @@ root@omarbelkady:~$ ./
 ```
 
 
-
 ### install the tree command within the terminal
 ```bash
 root@omarbelkady:~$ brew install tree 
