@@ -1,3 +1,6 @@
+### HOW TO DEPLOY LIVE SERVER ON MY MACHINE
+[![Screenshot-2020-08-03-at-3-47-03-AM.png](https://i.postimg.cc/0jqPVgdN/Screenshot-2020-08-03-at-3-47-03-AM.png)](https://postimg.cc/KkQ6YHWX)
+[![Screenshot-2020-08-03-at-3-47-17-AM.png](https://i.postimg.cc/G2FZh4Gc/Screenshot-2020-08-03-at-3-47-17-AM.png)](https://postimg.cc/S2KZgNg5)
 #### Vim
 ```
 $ v ==> Copy the character
@@ -13,52 +16,48 @@ $ i ==> toggle insert/command mode
 ```
 
 ### show the files in the working directory
-```linux
-$ ls
-```
-### Stop an existing process
-```bash
-kill
+```console
+root@omarbelkady:~$ ls
 ```
 
-### Change directory to home 
-```bash
-$ cd ~
+### Stop an existing process
+```console
+root@omarbelkady:~$ kill
 ```
 
 ### create a directory
-```bash
-$ mkdir
+```console
+root@omarbelkady:~$ mkdir
 ```
 
 ### remove a filled directory but keep the subdirectories
-```bash
-$ rm -r
+```console
+root@omarbelkady:~$ rm -r
 ```
 
 ### remove a filled directory and the subdirectories
-```bash
-$ rm -rf
+```console
+root@omarbelkady:~$ rm -rf
 ```
 
 ### print working directory
-```bash
-$ pwd
+```console
+root@omarbelkady:~$ pwd
 ```
 
-### return to the previous directory
-```bash
-$ cd - 
+### Change directory to home 
+```console
+root@omarbelkady:~$ cd ~
 ```
 
 ### go up 1 directory
-```bash
-$ cd .. 
+```console
+root@omarbelkady:~$ cd .. 
 ```
 
 ### go back 2 directories
-```bash
-$ cd ../.. 
+```console
+root@omarbelkady:~$ cd ../.. 
 ```
 
 ### Shows the current authenticated user 
@@ -71,11 +70,14 @@ Prints.....
 ```bash
 $ echo "Nelan 56837 6342"
 ```
+
 ### alias
 Map a command to another command
 ```bash
-alias home='cd ~'
+$ alias home='cd ~'
+$ alias ll='ls -al'
 ```
+
 ### go forward between one word to the next word in your command
 alt+f
 
@@ -120,6 +122,7 @@ $ ./
 ```
 
 
+
 ### install the tree command within the terminal
 ```bash
 $ brew install tree 
@@ -129,6 +132,7 @@ $ brew install tree
 ```bash
 $ touch [filename]
 ```
+
 ### Copy
 ```bash
 $ cp *.txt pathtothedirectory
@@ -138,6 +142,7 @@ $ cp *.txt pathtothedirectory
 ```bash
 $ cp *.extension examples
 ```
+
 ### Example: I am copying all the executable(.exe) files within my working directory into the examples directory
 ```bash
 $ cp *.exe examples
@@ -147,6 +152,7 @@ $ cp *.exe examples
 ```bash
 $ grep -r "END" examples
 ```
+
 The above command will run a recursive search in my examples directory for any file that has the word END in it
 
 ### Display all the commands committed as history
@@ -161,7 +167,7 @@ $ ![historyNumber]
 
 ### Change the file permission or as written change access modes
 ```bash
-$ chmod
+$ chmod [permission] [fileName]
 ```
 
 ### Display all the ip and mac addresses within your network in a table structure
@@ -173,6 +179,7 @@ $ arp -a
 ```bash
 $ ifconfig
 ```
+
 ### Display Your mac address
 ```bash
 $ macchanger -s eth0
@@ -209,6 +216,7 @@ $ airmon-ng check kill
 ```git
 git clone <url> 
 ``` 
+
 ### Create New Branch LOCALLY
 ```git
 git checkout -b <nameOfNewBranch>
@@ -270,19 +278,19 @@ git merge features
 
 #### Rename a branch
 ```git
-git branch -m <OLD> <NEW>
+$ git branch -m <OLD> <NEW>
 ```
 
 #### To rename say, for example omar which I am currently working on
-```git
-git branch -m ramo
+```bash
+$ git branch -m ramo
 ```
 
 
 #### How To Delete Project
 ##### 1- Delete The Local branch
-```git
-git branch -d <nameofBranch>
+```bash
+$ git branch -d <nameofBranch>
 ```
 
 ##### 2- Delete The Remote branch
@@ -298,7 +306,7 @@ $ git remote prune <nameofBranch>
 
 ### Comparing Revisions
 #### Show the difference between master branch(locally) and master branch(remote-GitHub)
-```git
+```bash
 $ git diff origin..master
 ```
 
@@ -307,6 +315,7 @@ $ git diff origin..master
 $ git diff --stat HEAD
 ```
 
+<<<<<<< HEAD
 ### Privellege Escalation
 Step 1: launch Apache web server
 ~~~
@@ -371,3 +380,5 @@ Step 11: Search for open ports that are enabled
 ```bash
 netsh firewall show state
 ```
+=======
+>>>>>>> 06f795f4d47925208f88edd402e680c281d165bb
