@@ -315,7 +315,6 @@ $ git diff origin..master
 $ git diff --stat HEAD
 ```
 
-<<<<<<< HEAD
 ### Privellege Escalation
 Step 1: launch Apache web server
 ~~~
@@ -380,5 +379,3 @@ Step 11: Search for open ports that are enabled
 ```bash
 netsh firewall show state
 ```
-=======
->>>>>>> 06f795f4d47925208f88edd402e680c281d165bb
