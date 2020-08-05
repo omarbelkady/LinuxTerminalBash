@@ -73,15 +73,15 @@ root@omarbelkady:~$ whoami
 ### echo
 Prints..... 
 ```bash
-~$ echo "Nelan 56837 6342"
+root@omarbelkady:~$ echo "Nelan 56837 6342"
 ```
 
 ### alias
 Map a command to another command
 ```bash
-$ alias home='cd ~'
-$ alias ll='ls -al'
-$ alias root='cd /'
+root@omarbelkady:~$ alias home='cd ~'
+root@omarbelkady:~$ alias ll='ls -al'
+root@omarbelkady:~$ alias root='cd /'
 ```
 
 ### go forward between one word to the next word in your command
@@ -219,35 +219,35 @@ root@omarbelkady:~$ airmon-ng check kill
 
 ### How To Clone A directory
 ```bash
-git clone <url> 
+root@omarbelkady:~$ git clone <url> 
 ``` 
 
 ## Continuous Workflow
 
 ### 1- Get the latest version of your project
 ```bash
-git pull origin <nameOfBranch>
+root@omarbelkady:~$ git pull origin <nameOfBranch>
 ```
 
 ### Create New Branch LOCALLY 2)-- SKIP THIS STEP IF BRANCH EXISTS
 ```bash
-git checkout -b <nameOfNewBranch>
+root@omarbelkady:~$ git checkout -b <nameOfNewBranch>
 ```
 
 
 ### Get your local branch meaning what you have in your machine to agree with your remote branch(branch on GitHub) usually master IF YOU ARE PM
 ```bash
-git push origin <nameOfBranch>
+root@omarbelkady:~$ git push origin <nameOfBranch>
 ```
 
 ### Goto a different branch
 ```bash
-git checkout <nameofBranch>
+root@omarbelkady:~$ git checkout <nameofBranch>
 ```
 
 ### Delete the local branch(branch on your local machine aka computer)
 ```bash
-git branch -d <nameOfBranch>
+root@omarbelkady:~$ git branch -d <nameOfBranch>
 ```
 
 
@@ -255,81 +255,81 @@ git branch -d <nameOfBranch>
 
 #### 1- Initialize An Empty Repository
 ```bash
-git init
+root@omarbelkady:~$ git init
 ```
 #### 2- Add all the files to be staged
 ```bash
-git add .
+root@omarbelkady:~$ git add .
 ```
 #### 3- Commit the files use -m to be respectful to your peers to log what you are doing
 ```bash
-git commit -m "A overall description of what you just modified"
+root@omarbelkady:~$ git commit -m "A overall description of what you just modified"
 ```
 
 #### 4- Do not forget to link your local repository to the remote repository
 ```bash
-git remote add origin <urlOfRepo>
+root@omarbelkady:~$ git remote add origin <urlOfRepo>
 ```
 
 #### 5- Push to the repository
 ```bash
-git push origin <NameOfBranch>
+root@omarbelkady:~$ git push origin <NameOfBranch>
 ```
 
 ### Branching and Merging
 
 #### Show a list of all the branches a * next to a branch means the branch you are on
 ```bash
-git branch
+root@omarbelkady:~$ git branch
 ```
 
 #### IF you are in a group ALWAYS PULL THEN PUSH. In this case I am pulling from the remote Branch Everything from the repo Linux
 ```bash
-git pull origin . Linux
+root@omarbelkady:~$ git pull origin . Linux
 ```
 
 #### If you are working on a feature and your friend is working on another feature and your pm tells you we need both your work now in the features repository
 ```bash
-git merge features
+root@omarbelkady:~$ git merge features
 ```
 
 #### Rename a branch
 ```bash
-$ git branch -m <OLD> <NEW>
+root@omarbelkady:~$ git branch -m <OLD> <NEW>
 ```
 
 #### To rename say, for example omar which I am currently working on
 ```bash
-$ git branch -m ramo
+root@omarbelkady:~$ git branch -m ramo
 ```
 
 
 #### How To Delete Project
 ##### 1- Delete The Local branch
 ```bash
-$ git branch -d <nameofBranch>
+root@omarbelkady:~$ git branch -d <nameofBranch>
 ```
 
 ##### 2- Delete The Remote branch
 ```bash
-$ git push origin :<nameofBranch>
+root@omarbelkady:~$ git push origin :<nameofBranch>
 ```
 
 ##### 3- Sync your local changes with your remote changes
 ```bash
-$ git pull origin master
+root@omarbelkady:~$ git pull origin master
 ```
 
 
 ### Comparing Revisions
 #### Show the difference between master branch(locally) and master branch(remote-GitHub)
 ```bash
-$ git diff origin..master
+root@omarbelkady:~$ git diff origin..master
 ```
 
 #### Show the difference between work that has been committed and not been committed
 ```bash
-$ git diff --stat HEAD
+root@omarbelkady:~$ git diff --stat HEAD
 ```
 
 ### Privellege Escalation
