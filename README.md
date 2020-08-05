@@ -196,22 +196,22 @@ root@omarbelkady:~$ macchanger -r eth0
 ```
 
 ### Sorted order of your mac address
-```bash
+```console
 root@omarbelkady:~$ ifconfig | grep ether
 ```
 
 ### How to know which command you can run on the specific file
-```bash
+```console
 root@omarbelkady:~$ cat [nameOfFile]
 ```
 
 ### Reboot From the Terminal
-```bash
+```console
 root@omarbelkady:~$ reboot
 ```
 
 ### Kill all Subprocesses
-```bash
+```console
 root@omarbelkady:~$ airmon-ng check kill
 ```
 
@@ -224,7 +224,7 @@ git clone <url>
 
 ## Continuous Workflow
 
-###1- Get the latest version of your project
+### 1- Get the latest version of your project
 ```bash
 git pull origin <nameOfBranch>
 ```
