@@ -395,3 +395,19 @@ Step 11: Search for open ports that are enabled
 ```bash
 root@omarbelkady:~$ netsh firewall show state
 ```
+
+## Metasploit
+### STEP1
+set RHOSTS # 
+
+### STEP 2
+set RPORT #
+
+### STEP 3: Root User
+set USERNAME root
+
+### STEP 4: start scan
+run
+
+### STEP 5: exploit
+exploit
