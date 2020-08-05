@@ -27,17 +27,17 @@ root@omarbelkady:~$ kill
 
 ### create a directory
 ```console
-root@omarbelkady:~$ mkdir
+root@omarbelkady:~$ mkdir <nameOfDir>
 ```
 
 ### remove a filled directory but keep the subdirectories
 ```console
-root@omarbelkady:~$ rm -r
+root@omarbelkady:~$ rm -r <nameOfDir>
 ```
 
 ### remove a filled directory and the subdirectories
 ```console
-root@omarbelkady:~$ rm -rf
+root@omarbelkady:~$ rm -rf <nameOfDir>
 ```
 
 ### print working directory
@@ -48,6 +48,11 @@ root@omarbelkady:~$ pwd
 ### Change directory to home 
 ```console
 root@omarbelkady:~$ cd ~
+```
+
+### Change directory to root
+```bash
+root@omarbelkady: ~$ cd /
 ```
 
 ### go up 1 directory
@@ -68,14 +73,15 @@ root@omarbelkady:~$ whoami
 ### echo
 Prints..... 
 ```bash
-root@omarbelkady:~$ echo "Nelan 56837 6342"
+~$ echo "Nelan 56837 6342"
 ```
 
 ### alias
 Map a command to another command
 ```bash
-root@omarbelkady:~$ alias home='cd ~'
-root@omarbelkady:~$ alias ll='ls -al'
+$ alias home='cd ~'
+$ alias ll='ls -al'
+$ alias root='cd /'
 ```
 
 ### go forward between one word to the next word in your command
@@ -122,7 +128,7 @@ root@omarbelkady:~$ ./
 ```
 
 
-### install the tree command within the terminal
+### install the tree command within the terminal- THIS IS A MAC EXCLUSIVE
 ```bash
 root@omarbelkady:~$ brew install tree 
 ```
@@ -134,7 +140,7 @@ root@omarbelkady:~$ touch [filename]
 
 ### Copy
 ```bash
-root@omarbelkady:~$ cp *.txt pathtothedirectory
+root@omarbelkady:~$ cp *.txt [pathtothedirectory]
 ```
 
 ### copy all the files with the specified extension ino the examples directory
@@ -196,7 +202,7 @@ root@omarbelkady:~$ ifconfig | grep ether
 
 ### How to know which command you can run on the specific file
 ```bash
-root@omarbelkady:~$ cat
+root@omarbelkady:~$ cat [nameOfFile]
 ```
 
 ### Reboot From the Terminal
@@ -212,71 +218,83 @@ root@omarbelkady:~$ airmon-ng check kill
 ## Git
 
 ### How To Clone A directory
-```git
+```bash
 git clone <url> 
 ``` 
 
-### Create New Branch LOCALLY
-```git
+## Continuous Workflow
+
+###1- Get the latest version of your project
+```bash
+git pull origin <nameOfBranch>
+```
+
+### Create New Branch LOCALLY 2)-- SKIP THIS STEP IF BRANCH EXISTS
+```bash
 git checkout -b <nameOfNewBranch>
 ```
 
+
 ### Get your local branch meaning what you have in your machine to agree with your remote branch(branch on GitHub) usually master IF YOU ARE PM
-```git
+```bash
 git push origin <nameOfBranch>
 ```
 
 ### Goto a different branch
-```git
+```bash
 git checkout <nameofBranch>
 ```
 
-### Delete the remote branch(branch on GH)
-```git
-git push origin :nameOfBranch
-```
-
 ### Delete the local branch(branch on your local machine aka computer)
-```git
+```bash
 git branch -d <nameOfBranch>
 ```
 
 
-### Steps To Create A Create Project
+### Steps To Create A New Project
 
 #### 1- Initialize An Empty Repository
-```git
+```bash
 git init
 ```
 #### 2- Add all the files to be staged
-```git
+```bash
 git add .
 ```
 #### 3- Commit the files use -m to be respectful to your peers to log what you are doing
-```git
-git commit
+```bash
+git commit -m "A overall description of what you just modified"
 ```
 
+#### 4- Do not forget to link your local repository to the remote repository
+```bash
+git remote add origin <urlOfRepo>
+```
+
+#### 5- Push to the repository
+```bash
+git push origin <NameOfBranch>
+```
 
 ### Branching and Merging
 
 #### Show a list of all the branches a * next to a branch means the branch you are on
-```git
+```bash
 git branch
 ```
 
-#### IF you are in a group ALWAYS PULL THEN PUSH. In this case I am pulling Everything from the repo Linux
-```git
-git pull . Linux
+#### IF you are in a group ALWAYS PULL THEN PUSH. In this case I am pulling from the remote Branch Everything from the repo Linux
+```bash
+git pull origin . Linux
 ```
 
 #### If you are working on a feature and your friend is working on another feature and your pm tells you we need both your work now in the features repository
-```git
+```bash
 git merge features
 ```
 
 #### Rename a branch
-```git
+```bash
 $ git branch -m <OLD> <NEW>
 ```
 
@@ -293,13 +311,13 @@ $ git branch -d <nameofBranch>
 ```
 
 ##### 2- Delete The Remote branch
-```git
+```bash
 $ git push origin :<nameofBranch>
 ```
 
 ##### 3- Sync your local changes with your remote changes
-```git
-$ git remote prune <nameofBranch>
+```bash
+$ git pull origin master
 ```
 
 
@@ -362,7 +380,6 @@ Step 8 a: Find the ip address of everyone
 ```bash
 root@omarbelkady:~$ ipconfig/all
 ```
-
 
 Step 9: Detect systems in the environment
 ```bash
