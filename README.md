@@ -51,7 +51,7 @@ root@omarbelkady:~$ cd ~
 ```
 
 ### Change directory to root
-```bash
+```console
 root@omarbelkady: ~$ cd /
 ```
 
