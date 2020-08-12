@@ -40,6 +40,12 @@ root@omarbelkady:~$ rm -r <nameOfDir>
 root@omarbelkady:~$ rm -rf <nameOfDir>
 ```
 
+### Move a directory with its contents to another location
+```console
+root@omarbelkady:~$ mv -v <ORIGINALPATH> <DESTINATIONPATH>
+```
+
+
 ### print working directory
 ```console
 root@omarbelkady:~$ pwd
