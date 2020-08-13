@@ -221,6 +221,29 @@ root@omarbelkady:~$ reboot
 root@omarbelkady:~$ airmon-ng check kill
 ```
 
+## DNS Enumeration AND ZONE Transfer we must use port 53 for ZT
+```bash
+nmap -p 53 --script dns-zone-transfer --script-args dns-zone-transfer.domain=targer-url
+```
+
+If NO Ping 
+```bash
+nmap -Pn -p 53 --script dns-zone-transfer --script-args dns-zone-transfer.domain=target-url
+```
+
+### SERVER HOW TO PERFORM ZONE TRANSFER
+```bash
+nmap --script dns-zons-transfer --script-args dns-zone-transfer.server=NAMEOFSERVERDNS, dns-zone-transfer.port=#, dns-zone-transfer.domain=DOMAINADDRESS
+```
+Enumerates Mail Servers, DNS Changes
+
+## -----------END OF DNS ENUMERATION-------------
+
+
+## NMAP ENUMERATION FTP
+
+
+
 ## Git
 
 ### How To Clone A directory
