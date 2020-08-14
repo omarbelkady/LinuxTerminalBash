@@ -242,6 +242,39 @@ Enumerates Mail Servers, DNS Changes
 
 ## NMAP ENUMERATION FTP
 
+### display a list of ftp scripts
+```bash
+ls -al /usr/share/nmap/scripts | grep -e "ftp"
+```
+
+The ftp-anon.nse is a script used to perform anonymous ftp logins and very efficient in ctf
+The ftp-brute.nse is a script used to perform a brute force attack. Do not use nmap as a brute force utility it is recommended to use hydra.
+ftp-proftpd-backdoor.nse is very similar to ftp-vsftpd-backdoor.nse in that the two of the scripts are intrusive. They directly interact with the target.
+
+
+To perform a service version scan on port 21. 
+metasploitable 2 runs on 1.149
+metasploitable 3 runs on 1.38
+```bash
+nmap -sV -p 21 192.168.1.149 192.168.1.38
+```
+
+Since vsftpd 2.3.4 is running this means I must run the vsftpd backdoor which is metasploitable2. I see the the Microsoft Ftpd which means I must run the appropriate script. The most essential script we must run is the ftp-anon-nse script.
+
+### script that displays system info of the target
+```
+ftp-syst.nse
+```
+
+Now that I got the information I run a stealth Scan
+```bash
+sudo nmap -p 22 -sS --script ftp-anon, ftp-syst,tftp-enum, ftp-vsftpd-backdoor 21 192.168.1.149 192.168.1.38
+```
+
+This will tell us whether Anonymous FTP Login is allowed, whether FTP Server status(connected, logged in, disconnected), TYPE and Session Timeout. It will tell us whether or not there is a backdoor and whether or not the backdoor is exploitable. Whether or not the backdoor will give us root access.
+
+Another Enumeration Step:
+ftp://192.168.1.149
 
 
 ## Git
