@@ -242,6 +242,32 @@ Enumerates Mail Servers, DNS Changes
 
 ## NMAP ENUMERATION FTP
 
+### OS Scanning
+```bash
+nmap -O <targetIP>
+```
+
+### Most Popular Port Scan I am scanning the 20 most popular ports in the network
+```bash
+nmap --top-ports 20 <TargetIP>
+```
+
+### Host Scan
+```bash
+nmap -sp <TARGET_IP>
+```
+
+### Ouput Nmap Results to TXT file
+```bash
+nmap --top-port 20 <TARGET_IP> -oN nmapresu.txt
+```
+
+### Banner Grabbing using Nmap Aggressive Scan(T4) T stands for Timing Template
+```bash
+sudo nmap -F -T4 --script nameOfScript TargetIP
+```
+
+
 ### display a list of ftp scripts
 ```bash
 ls -al /usr/share/nmap/scripts | grep -e "ftp"
