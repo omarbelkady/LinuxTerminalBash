@@ -259,14 +259,14 @@ metasploitable 3 runs on 1.38
 nmap -sV -p 21 192.168.1.149 192.168.1.38
 ```
 
-Since vsftpd 2.3.4 is running this means I must run the vsftpd backdoor which is metasploitable2. I see the the Microsoft Ftpd which means I must run the appropriate script. The most essential script we must run is the ftp-anon-nse script.
+If vsftpd 2.3.4 is running this means I must run the vsftpd backdoor which is metasploitable2 in addition if Microsoft Ftpd is running this means I must run the appropriate script. The most essential script we must run is the ftp-anon-nse script.
 
 ### script that displays system info of the target
 ```
 ftp-syst.nse
 ```
 
-Now that I got the information I run a stealth Scan
+I run a stealth Scan to enumerate potential paths and list any vulns
 ```bash
 sudo nmap -p 22 -sS --script ftp-anon, ftp-syst,tftp-enum, ftp-vsftpd-backdoor 21 192.168.1.149 192.168.1.38
 ```
@@ -275,6 +275,40 @@ This will tell us whether Anonymous FTP Login is allowed, whether FTP Server sta
 
 Another Enumeration Step:
 ftp://192.168.1.149
+
+SMTP runs on many many servers. Why perform enumeration on the SMTP port? What info is obtained. SMTP runs by default on port 25. But it can be configured to run on different port. If SMTP service is badly configured we can enumerate user accounts. If there is an open relay we can use this to bypass authentication and then we send mails.
+
+###List all the nmap script to do with smtp
+```bash
+6342_56837@ubuntu:~$ ls -al /usr/share/nmap/scripts/ | grep -e "smtp"
+```
+### SMTP
+```
+SMTP Command and run on port 25 to enumerate users on the system and we check if vrfy is listed which means it verifies whether a particular mail box exists on the system. Depending on the response from the system we obtain the user's mailbox and user's username.  This can trace the path for us to use BF and then we use SSH/Telnet to gain access.
+```
+### SMTP Example
+```bash
+6342_56837@ubuntu:~$ nmap -p25 --script smtp-enum-users --script-args smtp-enum-users.methods={VRFY} [targetIP]
+```
+
+```bash
+6342_56837@ubuntu:~$ nmap -p25 --script smtp-enum-users --script-args smtp-enum-users.methods={VRFY} 192.168.1.325
+```
+
+```bash
+2526_56837_2@ubuntu: ~$ sudo nmap -p25 --script smtp-commands 192.168.1.217
+```
+
+
+### SMTP Open Relay Script Used to Bypass Auth
+```bash
+2526_56837_2@ubuntu: ~$ nmap -p25 --script smtp-open-relay 192.168.1.217
+```
+
+### SMTP Vulnerability Scan
+```bash
+2526_56837_2@ubuntu: ~$ nmap -p25 --script smtp-vuln-cve2011-1720 192.168.1.217
+```
 
 
 ## Git
