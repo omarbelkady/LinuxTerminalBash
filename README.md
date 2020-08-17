@@ -301,7 +301,7 @@ ftp-syst.nse
 ```
 
 I run a stealth Scan to enumerate potential paths and list any vulns
-```bash
+``` bash
 sudo nmap -p 22 -sS --script ftp-anon, ftp-syst,tftp-enum, ftp-vsftpd-backdoor 21 192.168.1.149 192.168.1.38
 ```
 
@@ -312,8 +312,8 @@ ftp://192.168.1.149
 
 SMTP runs on many many servers. Why perform enumeration on the SMTP port? What info is obtained. SMTP runs by default on port 25. But it can be configured to run on different port. If SMTP service is badly configured we can enumerate user accounts. If there is an open relay we can use this to bypass authentication and then we send mails.
 
-###List all the nmap script to do with smtp
-```bash
+### List all the nmap script to do with smtp
+``` bash
 6342_56837@ubuntu:~$ ls -al /usr/share/nmap/scripts/ | grep -e "smtp"
 ```
 ### SMTP
