@@ -42,6 +42,8 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 		app.listen(port, () => console.log('This app is listening on port ${port}!'));
 
 	```
+
+	```
 	IF I were to make an HTTP Request I would get a response back of BLABLABLA
 	STEP 6: cd BE/
 	STEP 7: node app.js
