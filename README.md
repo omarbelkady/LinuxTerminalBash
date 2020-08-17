@@ -4,7 +4,7 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 ```
 
 ### HOW TO CONNECT A BE+FE
-```
+
 	STEP 0: NAME YOUR PROJECT
 	STEP 1: CREATE 2 DIRS(BE,FE)
 	A: WE NEED BE TO MAKE HTTP Req to THE BE FROM THE FE, WE NEED BE BECAUSE THIS WILL BLUR THE CREDENTIALS WHEN SUBMITTED
@@ -16,8 +16,8 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 	STEP 5: CREATE A BACKEND SERVER
 	STEP 6: Create a new file called App.js
 		NOTE: REACT RUNS ON 3000 and make sure Express doesn't run on the same portREMEMBER
-```	
-	```express
+	
+	```js
 		const express = require("express");
 		var request = require("request");
 		const app = express();
@@ -49,7 +49,8 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 	```
 
 
-	//FE PART
+
+	### FE PART
 	```bash
 	root@omarbelkady: ~$ create-react-app FE
 	root@omarbelkady: ~$ cd FE
@@ -58,7 +59,7 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 
 	STEP 9: Create the Weather.js file
 
-	```react
+	```js
 		import React, {Component} from 'react'
 
 
@@ -97,8 +98,8 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 
 	
 	
-	//App.js file
-	```react
+	App.js
+	```js
 		import React from "react";
 		import Weather from "./Weather";
 		import "./App.css";
@@ -119,13 +120,13 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 	```
 
 	### HOW TO LINK FE+BE
+	```
 	GOTO package.json
 	add a var called
 	"proxy" give the key a value the port the backend was running on "http://localhost:5000/"
 	should look like this
 	"proxy":"http://localhost:500"
-```
-```
+	```
 
 ### HOW TO DEPLOY LIVE SERVER ON MY MACHINE
 [![Screenshot-2020-08-03-at-3-47-03-AM.png](https://i.postimg.cc/0jqPVgdN/Screenshot-2020-08-03-at-3-47-03-AM.png)](https://postimg.cc/KkQ6YHWX)
