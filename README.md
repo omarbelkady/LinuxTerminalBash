@@ -49,7 +49,7 @@ STEP 7: node app.js
 STEP 8: npm i request --save
 ```
 ### FE PART
-```bash
+```console
 root@omarbelkady: ~$ create-react-app FE
 root@omarbelkady: ~$ cd FE
 root@omarbelkady: ~$ npm start
