@@ -123,6 +123,8 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 	"proxy" give the key a value the port the backend was running on "http://localhost:5000/"
 	should look like this
 	"proxy":"http://localhost:500"
+```
+```
 
 ### HOW TO DEPLOY LIVE SERVER ON MY MACHINE
 [![Screenshot-2020-08-03-at-3-47-03-AM.png](https://i.postimg.cc/0jqPVgdN/Screenshot-2020-08-03-at-3-47-03-AM.png)](https://postimg.cc/KkQ6YHWX)
