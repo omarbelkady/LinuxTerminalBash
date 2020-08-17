@@ -17,19 +17,19 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 	STEP 6: Create a new file called App.js
 		NOTE: REACT RUNS ON 3000 and make sure Express doesn't run on the same portREMEMBER
 ```	
-	```js
-		const express = require("express");
-		var request = require("request");
-		const app = express();
-		const port = 5000;
+```js
+	const express = require("express");
+	var request = require("request");
+	const app = express();
+	const port = 5000;
 
-		app.get("/", (req,res) => res.send("BLABLABLA"));// this is an endpoind which we can test on POSTMAN
-		app.get("/nelanEndPoint",(req,res) => res.send("This is the endpoint I will test on Postman"));
-		app.get("/getWeatherRabat",(req,res) => {
-			//Make an http request to the URL google
-			request(
-				"http://api.apixu.com/v1/current.json?key=36272f88f57b49d9b0d04252191905&q=Rabat",
-				function(error, response, body){
+	app.get("/", (req,res) => res.send("BLABLABLA"));// this is an endpoind which we can test on POSTMAN
+	app.get("/nelanEndPoint",(req,res) => res.send("This is the endpoint I will test on Postman"));
+	app.get("/getWeatherRabat",(req,res) => {
+		//Make an http request to the URL google
+		request(
+			"http://api.apixu.com/v1/current.json?key=36272f88f57b49d9b0d04252191905&q=Rabat",
+			function(error, response, body){
 					if(!error && response.statusCode==200){
 						var parseBody=JSON.parse(body);
 						var temp_c = parseBody['current']['temp_c'];
@@ -40,42 +40,37 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 			);
 			});
 		app.listen(port, () => console.log('This app is listening on port ${port}!'));
+```
 
-	```
+```
+IF I were to make an HTTP Request I would get a response back of BLABLABLA
+STEP 6: cd BE/
+STEP 7: node app.js
+STEP 8: npm i request --save
+```
+### FE PART
+```bash
+root@omarbelkady: ~$ create-react-app FE
+root@omarbelkady: ~$ cd FE
+root@omarbelkady: ~$ npm start
+```
 
-	```
-	IF I were to make an HTTP Request I would get a response back of BLABLABLA
-	STEP 6: cd BE/
-	STEP 7: node app.js
-	STEP 8: npm i request --save
-	```
+STEP 9: Create the Weather.js file
 
+```js
+import React, {Component} from 'react';
 
-
-	### FE PART
-	```bash
-	root@omarbelkady: ~$ create-react-app FE
-	root@omarbelkady: ~$ cd FE
-	root@omarbelkady: ~$ npm start
-	```
-
-	STEP 9: Create the Weather.js file
-
-	```js
-		import React, {Component} from 'react'
-
-
-		export default class Weather extends Component{
-			//Creating the state
-			constructor(){
-				super()
-				this.state={
-					weather: "Not yet Gotten"
-				};
-			}
+export default class Weather extends Component{
+	//Creating the state
+	constructor(){
+		super()
+		this.state={
+			weather: "Not yet Gotten"
+		};
+	}
 			
-			//Test the http request FE to our BE
-			//Before doing this install the package by doing this: npm i axios --save
+	//Test the http request FE to our BE
+	//Before doing this install the package by doing this: npm i axios --save
 			handleButtonClick = () =>{
 				axios.get("/getWeathermorocco").then(response =>{
 					//setting the state to it
@@ -95,40 +90,37 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 				}
 			}
 		}
-
-	```
+```
 
 	
-	
-	App.js
-	```js
-		import React from "react";
-		import Weather from "./Weather";
-		import "./App.css";
+App.js
+```js
+import React from "react";
+import Weather from "./Weather";
+import "./App.css";
 
-		function App()
-		{
-			return(
-				<div className="App">
-				<header className="App-header">
-					<Weather />
-				</header>
-				</div>
-			);
-		}
+function App()
+{
+	return(
+		<div className="App">
+		<header className="App-header">
+			<Weather />
+			</header>
+			</div>
+	);
+}
 
+export default App;
+```
 
-		export default App;
-	```
-
-	### HOW TO LINK FE+BE
-	```
-	GOTO package.json
-	add a var called
-	"proxy" give the key a value the port the backend was running on "http://localhost:5000/"
-	should look like this
-	"proxy":"http://localhost:500"
-	```
+### HOW TO LINK FE+BE
+```
+GOTO package.json
+add a var called
+"proxy" give the key a value the port the backend was running on "http://localhost:5000/"
+should look like this
+"proxy":"http://localhost:500"
+```
 
 ### HOW TO DEPLOY LIVE SERVER ON MY MACHINE
 [![Screenshot-2020-08-03-at-3-47-03-AM.png](https://i.postimg.cc/0jqPVgdN/Screenshot-2020-08-03-at-3-47-03-AM.png)](https://postimg.cc/KkQ6YHWX)
