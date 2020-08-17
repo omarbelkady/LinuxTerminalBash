@@ -4,7 +4,7 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 ```
 
 ### HOW TO CONNECT A BE+FE
-
+```
 	STEP 0: NAME YOUR PROJECT
 	STEP 1: CREATE 2 DIRS(BE,FE)
 	A: WE NEED BE TO MAKE HTTP Req to THE BE FROM THE FE, WE NEED BE BECAUSE THIS WILL BLUR THE CREDENTIALS WHEN SUBMITTED
@@ -16,7 +16,7 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 	STEP 5: CREATE A BACKEND SERVER
 	STEP 6: Create a new file called App.js
 		NOTE: REACT RUNS ON 3000 and make sure Express doesn't run on the same portREMEMBER
-	
+```	
 	```js
 		const express = require("express");
 		var request = require("request");
