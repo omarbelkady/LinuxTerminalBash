@@ -15,7 +15,8 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 	STEP 4: npm i express --save
 	STEP 5: CREATE A BACKEND SERVER
 	STEP 6: Create a new file called App.js
-				NOTE: REACT RUNS ON 3000 and make sure Express doesn't run on the same portREMEMBER
+		NOTE: REACT RUNS ON 3000 and make sure Express doesn't run on the same portREMEMBER
+```	
 	```express
 		const express = require("express");
 		var request = require("request");
