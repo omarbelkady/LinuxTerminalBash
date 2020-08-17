@@ -71,25 +71,25 @@ export default class Weather extends Component{
 			
 	//Test the http request FE to our BE
 	//Before doing this install the package by doing this: npm i axios --save
-			handleButtonClick = () =>{
-				axios.get("/getWeathermorocco").then(response =>{
-					//setting the state to it
-					this.setState({
-						weather: response.data.temp_c
-					});
-				});
-			};
+	handleButtonClick = () =>{
+		axios.get("/getWeathermorocco").then(response =>{
+		//setting the state to it
+		this.setState({
+			weather: response.data.temp_c	
+			});
+	});
+	};
 
-			render(){
-				return{
-					<div>
-						<!-- Adding the on button click handler-->
-						<button onClick={this.handleButtonClick}>Get Weather in Morocco</button>
-						<h1>The Weather in Morocco is: {this.state.weather} </h1>
-					</div>
-				}
-			}
+	render(){
+		return{	
+			<div>
+			<!-- Adding the on button click handler-->
+			<button onClick={this.handleButtonClick}>Get Weather in Morocco</button>
+			<h1>The Weather in Morocco is: {this.state.weather} </h1>
+			</div>
 		}
+	}
+}
 ```
 
 	
