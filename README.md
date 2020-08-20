@@ -397,6 +397,11 @@ root@omarbelkady:~$ reboot
 ```console
 root@omarbelkady:~$ airmon-ng check kill
 ```
+### Download an image from the terminal and pipe it with a specific name of your choice
+```bash
+root@omarbelkady: ~$ curl url/nameofimage.jpg > nameYouWishToCallYourImage.jpg
+```
+
 
 ## DNS Enumeration AND ZONE Transfer we must use port 53 for ZT
 ```bash
