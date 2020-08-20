@@ -122,6 +122,28 @@ should look like this
 "proxy":"http://localhost:500"
 ```
 
+### ARCHITECTURE OF A #PAGE WEBSITE
+```
+1- NAME YOUR DEFAULT PAGE INDEX.HTML CHANGE IT TO INDEX.PHP
+2- ANY OTHER PAGE SHOULD NAME_OF_PAGE.PHP
+3- HAVE AN INCLUDES FOLDER
+4- HAVE A THEME FOLDER
+5- HAVE js folder
+6- HAVE an img folder
+7- YOUR MAIN PAGE SHOULD BE index.php
+8- OPEN THE FILES IN THE INCLUDES FOLDER ALONG WITH YOUR INDEX.PHP FILE
+9- to pipe the scripts of the style change the head tags to this:
+```
+### HOW TO CHANGE FROM IMPORT PAGE INTO NEW INDEX.PHP include the head.php which is in the includes dir
+```php
+<head>
+	<?php include 'includes/head.php';?>
+</head>
+```
+
+
+
+
 ### HOW TO DEPLOY LIVE SERVER ON MY MACHINE
 [![Screenshot-2020-08-03-at-3-47-03-AM.png](https://i.postimg.cc/0jqPVgdN/Screenshot-2020-08-03-at-3-47-03-AM.png)](https://postimg.cc/KkQ6YHWX)
 [![Screenshot-2020-08-03-at-3-47-17-AM.png](https://i.postimg.cc/G2FZh4Gc/Screenshot-2020-08-03-at-3-47-17-AM.png)](https://postimg.cc/S2KZgNg5)
@@ -145,6 +167,22 @@ $ i ==> toggle insert/command mode
 ```console
 root@omarbelkady:~$ ls
 ```
+
+### show all the files in the working directory including the hidden files
+```console
+root@omarbelkady:~$ ls -la
+```
+
+### show all the files in the working directory with their permissions in a long list format
+```console
+root@omarbelkady:~$ ls -ll
+```
+
+### show all the files in the working directory with their permissions in a long list format in sorted order by date:time
+```console
+root@omarbelkady: ~$ ls -ll -t
+```
+
 
 ### Stop an existing process
 ```console
