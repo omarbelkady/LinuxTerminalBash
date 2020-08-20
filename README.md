@@ -1,7 +1,20 @@
-### IF BUGGY LIVE SERVER USE this
+### STEP 1: SPIN A LIVE SERVER
 ```bash
 root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 ```
+### STEP 2: Long List of all the processes running on your local machine
+```bash
+root@omarbelkady:~$ lsof -i ll
+```
+### STEP 3: Make sure to kill the process after use to be able to use it again
+```bash
+root@omarbelkady:~$ kill -9 -PROCESSID
+```
+### STEP 3A: If multiple processes are running instead of manually doing it one by one you can kill the processes in one line
+```bash
+root@omarbelkady: ~$ kill -9 -PROCESSID1 -PROCESSID2 -PROCESSIDETC.
+```
+
 
 ### HOW TO CONNECT A BE+FE
 ```
