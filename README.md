@@ -4,14 +4,12 @@ root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 ```
 ### STEP 2: Long List of all the processes running on your local machine
 ```bash
-root@omarbelkady: ~$ lsof -i ll
+root@omarbelkady:~$lsof -i ll
 ```
 ### STEP 3: Make sure to kill the process after use to be able to use it again
 ```bash
-root@omarbelkady: ~$ kill -9 PROCESSID
+root@omarbelkady:~$ kill -9 PROCESSID
 ```
-
-
 
 ### HOW TO CONNECT A BE+FE
 ```
