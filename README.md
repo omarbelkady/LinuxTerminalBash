@@ -698,19 +698,29 @@ root@omarbelkady:~$ netsh firewall show state
 ## Metasploit
 ### WAY N1
 #### STEP1
+```
 set RHOSTS # 
+```
 
 #### STEP 2
+```
 set RPORT #
+```
 
 #### STEP 3: Root User
+```
 set USERNAME root
+```
 
 #### STEP 4: start scan
+```
 run
+```
 
 #### STEP 5: exploit
+```
 exploit
+```
 
 ### WAY N2[CORRECT WAY]
 ```
