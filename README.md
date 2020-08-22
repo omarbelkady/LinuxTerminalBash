@@ -174,6 +174,7 @@ $ p ==> Paste after the cursor
 $ :set number ==> display line number
 $ :w ==> write to the file
 $ i ==> toggle insert/command mode
+$ /abc ==> Searching for the abc
 ```
 
 ### show the files in the working directory
