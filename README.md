@@ -2,10 +2,15 @@
 ```bash
 root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 ```
-### STEP 2: Long List of all the processes running on your local machine
+### STEP 2A: Long List of all the processes running on your local machine
 ```bash
 root@omarbelkady:~$ lsof -i -ll
 ```
+### STEP 2A: Long List of all the processes running on your local machine if you use npm
+```bash
+root@omarbelkady:~$ ps -e|grep node
+```
+
 ### STEP 3: Make sure to kill the process after use to be able to use it again
 ```bash
 root@omarbelkady:~$ kill -9 -PROCESSID
@@ -174,6 +179,7 @@ $ p ==> Paste after the cursor
 $ :set number ==> display line number
 $ :w ==> write to the file
 $ i ==> toggle insert/command mode
+$ /abc ==> Searching for the abc
 ```
 
 ### show the files in the working directory
