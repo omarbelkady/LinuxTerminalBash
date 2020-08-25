@@ -538,7 +538,6 @@ root@omarbelkady:~$ git pull origin <nameOfBranch>
 root@omarbelkady:~$ git checkout -b <nameOfNewBranch>
 ```
 
-
 ### Get your local branch meaning what you have in your machine to agree with your remote branch(branch on GitHub) usually master IF YOU ARE PM
 ```bash
 root@omarbelkady:~$ git push origin <nameOfBranch>
@@ -554,7 +553,6 @@ root@omarbelkady:~$ git checkout <nameofBranch>
 root@omarbelkady:~$ git branch -d <nameOfBranch>
 ```
 
-
 ### Steps To Create A New Project
 
 #### 1- Initialize An Empty Repository
@@ -565,6 +563,12 @@ root@omarbelkady:~$ git init
 ```bash
 root@omarbelkady:~$ git add .
 ```
+
+### 2a - If you made a mistake in Step 2 and wish to remove a file from staging
+```bash
+root@omarbelkady: ~$ git restore --stage pathOfFile
+```
+
 #### 3- Commit the files use -m to be respectful to your peers to log what you are doing
 ```bash
 root@omarbelkady:~$ git commit -m "A overall description of what you just modified"
