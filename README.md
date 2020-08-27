@@ -565,6 +565,11 @@ root@omarbelkady:~$ git branch -d <nameOfBranch>
 ```bash
 root@omarbelkady:~$ git init
 ```
+### 1a- Initialize An Empty Repository using curl Command
+```bash
+root@omarbelkady:~$ curl -u "usernameGOESHERE" https://api.github.com/user/repos -d '{"name":"NAMEYOUWANTTOGIVETOYOURREPO"}'
+```
+
 #### 2- Add all the files to be staged
 ```bash
 root@omarbelkady:~$ git add .
