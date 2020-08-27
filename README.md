@@ -68,7 +68,7 @@ root@omarbelkady:~$ whoami
 ### echo
 Prints..... 
 ```bash
-root@omarbelkady:~$ echo "Nelan 56837 6342"
+root@omarbelkady:~$ echo "Omar 56837 74355"
 ```
 
 ### alias
