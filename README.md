@@ -652,7 +652,7 @@ root@omarbelkady:~$ git diff --stat HEAD
 ```
 
 ### Privellege Escalation
-Step 1: launch Apache web server
+#### Step 1: launch Apache web server
 ~~~
 # service apache2 status
 ~~~
@@ -660,59 +660,66 @@ Step 1: launch Apache web server
 root@omarbelkady:~$ nmap -sT 192.168.1.27 4444
 ```
 
-Step 2: Check if port 4444 opened
+#### Step 2: Check if port 4444 opened
 ```bash
 root@omarbelkady:~$ netstat -an | find "4444"
 ```
-Step 3: Check if port 4444 opened
+#### Step 3: Check if port 4444 opened
 ```bash
 root@omarbelkady:~$ nmap -sT 192.168.1.27
 ```
 
-Step 4: Gain Access
+#### Step 4: Gain Access
 
 ```bash
 root@omarbelkady:~$ nc 192.168.1.27 4444
 ```
 
-Step 5: List Directories
+#### Step 5: List Directories
 ```bash
 root@omarbelkady:~$ dir
 ```
 
-Step 6: List the system details
+#### Step 6: List the system details
 ```bash
 root@omarbelkady:~$ systeminfo
 ```
 
-Step 7: Find the hostname
+#### Step 7: Find the hostname
 ```bash
 root@omarbelkady:~$ hostname
 ```
 
-Step 8: Find the users in the environment
+#### Step 8: Find the users in the environment
 ```bash
 root@omarbelkady:~$ net users
 ```
 
-Step 8 a: Find the ip address of everyone
+#### Step 8 a: Find the ip address of everyone
 ```bash
 root@omarbelkady:~$ ipconfig/all
 ```
 
-Step 9: Detect systems in the environment
+#### Step 9: Detect systems in the environment
 ```bash
 root@omarbelkady:~$ route print
 ```
 
-Step 10: Search for vulnerable devices
+#### Step 10: Search for vulnerable devices
 ```bash
 root@omarbelkady:~$ netstat -ano
 ```
 
-Step 11: Search for open ports that are enabled
+#### Step 11: Search for open ports that are enabled
 ```bash
 root@omarbelkady:~$ netsh firewall show state
+```
+
+
+
+#### FINDING THE IP ADDRESS OF A TARGET WHOM YOU WANT TO SET A REV CONNCECITON
+```bash
+root@blaba: ~$ netstat –an
 ```
 
 ## Metasploit
