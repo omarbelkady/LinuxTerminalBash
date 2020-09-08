@@ -239,10 +239,15 @@ root@omarbelkady:~$ pwd
 root@omarbelkady:~$ cd ~
 ```
 
+### Give root privelleges to for current user
+```console
+root@omarbelkady: ~$ sudo chmod 777 /
+```
 ### Change directory to root
 ```console
 root@omarbelkady: ~$ cd /
 ```
+
 
 ### go up 1 directory
 ```console
