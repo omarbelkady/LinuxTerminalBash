@@ -321,6 +321,10 @@ root@omarbelkady:~$ man
 root@omarbelkady:~$ ./
 ```
 
+### Find A file
+```bash
+root@omarbelkady:~$ find /full/path/here/ "PatternOrDIRNAME" 
+```
 
 ### install the tree command within the terminal- THIS IS A MAC EXCLUSIVE
 ```bash
