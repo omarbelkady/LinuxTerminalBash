@@ -238,6 +238,13 @@ root@omarbelkady:~$ pwd
 ```console
 root@omarbelkady:~$ cd ~
 ```
+### List all the packages installed navigate to usr and change your directory to the bin folder and list all the files
+```console
+root@omarbelkady: ~$ cd ~
+root@omarbelkady: ~$ cd ..
+root@omarbelkady: ~$ cd bin/
+root@omarbelkady: ~$ ls
+```
 
 ### Give root privelleges to for current user
 ```console
