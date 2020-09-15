@@ -21,7 +21,7 @@ root@omarbelkady: ~$ kill -9 -PROCESSID1 -PROCESSID2 -PROCESSIDETC.
 ```
 
 ### HOW TO CREATE A Package.JSON File
-```console
+```nodejs
 root@omarbelkady: ~$ npm init
 ```
 
