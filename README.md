@@ -20,6 +20,12 @@ root@omarbelkady:~$ kill -9 -PROCESSID
 root@omarbelkady: ~$ kill -9 -PROCESSID1 -PROCESSID2 -PROCESSIDETC.
 ```
 
+### HOW TO CREATE A Package.JSON File
+```bash
+root@omarbelkady: ~$ npm init
+```
+
+
 
 ### HOW TO CONNECT A BE+FE
 ```
