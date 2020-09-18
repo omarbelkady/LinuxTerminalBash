@@ -338,6 +338,15 @@ root@omarbelkady:~$ ./
 ```bash
 root@omarbelkady:~$ find /full/path/here/ "PatternOrDIRNAME" 
 ```
+### Find A File With the given
+```bash
+root@omarbelkady:~$ find /dir/to/searchin -name "file-to-search"
+```
+
+### Find in this directory and all subdirectories any file whose name has a c extension(fav extension 63526) and list them
+```bash
+root@omarbelkady:~$ find . -name "*.c" -type f -ls
+```
 
 ### install the tree command within the terminal- THIS IS A MAC EXCLUSIVE
 ```bash
