@@ -364,6 +364,21 @@ root@omarbelkady:~$ cp *.extension examples
 root@omarbelkady:~$ cp *.exe examples
 ```
 
+### Recursively search for all text files for a given string of text with the .txt extension
+```bash
+root@omarbelkady:~$ grep "63526 47 2 2-56837" ~/*.txt
+```
+
+### Recursively search for all text files for 2 given strings or more 
+```bash
+root@omarbelkady:~$ egrep -w -R 'assembly|2-56837|Pascal|727225' 
+```
+
+### Recursively search for all text files for 2 given strings or more in the NodeJS directory 
+```bash
+root@omarbelkady:~$ egrep -w -R 'assembly|2-56837|Pascal|727225' ~/NodeJS
+```
+
 ### Run a Recursive search in a directory for a specific string 
 ```bash
 root@omarbelkady:~$ grep -r "END" examples
@@ -371,7 +386,7 @@ root@omarbelkady:~$ grep -r "END" examples
 
 The above command will run a recursive search in my examples directory for any file that has the word END in it
 
-### Display all the commands committed as history
+### Display all the grep commands where I searched for the string of text grep in a file committed in history
 ```bash
 root@omarbelkady:~$ history | grep "grep" 
 ```
