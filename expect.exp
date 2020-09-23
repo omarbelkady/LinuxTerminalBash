@@ -1,0 +1,13 @@
+#!/usr/bin/expect
+spawn ssh root@ip
+expect "password"
+send "alanlovespascal\n"
+expect "root@Alan"
+send "scp alanngo@192.16.42.42:tcpdump-min_4.1.1-1_atheros.ipk /tmp/\r"
+expect "password"
+send "dumbpassword\r"
+expect "root@Alan"
+send "opkg install /tmp/*.ipk\r"
+expect "root@Alan"
+send "tcpdump port 80 and not src ip\r"
+interact
