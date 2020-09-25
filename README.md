@@ -692,6 +692,12 @@ root@omarbelkady:~$ git pull origin master
 root@omarbelkady:~$ git diff origin..master
 ```
 
+#### Show the difference between two branches a: clover b: pascallover
+```bash
+root@omarbelkady:~$ git diff clover pascallover
+```
+
+
 #### Show the difference between work that has been committed and not been committed
 ```bash
 root@omarbelkady:~$ git diff --stat HEAD
