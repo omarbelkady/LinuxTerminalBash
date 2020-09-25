@@ -621,9 +621,9 @@ root@omarbelkady:~$ curl -u "usernameGOESHERE" https://api.github.com/user/repos
 root@omarbelkady:~$ git add .
 ```
 
-### 2a - If you made a mistake in Step 2 and wish to remove a file from staging
+### 2a - If you made a mistake in Step 2 and wish to unstage a file
 ```bash
-root@omarbelkady: ~$ git restore --stage pathOfFile
+root@omarbelkady: ~$ git restore --staged pathOfFile
 ```
 
 #### 3- Commit the files use -m to be respectful to your peers to log what you are doing
