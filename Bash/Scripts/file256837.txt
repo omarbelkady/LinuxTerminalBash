@@ -1,0 +1,7 @@
+total 40
+drwx------ 2 u0_a78 u0_a78 4096 Sep 26 22:05 .
+drwx------ 5 u0_a78 u0_a78 4096 Sep 26 16:43 ..
+-rwx------ 1 u0_a78 u0_a78   97 Sep 26 16:30 InputScript.sh
+-rwx------ 1 u0_a78 u0_a78  226 Sep 26 22:05 OutputScript.sh
+-rw------- 1 u0_a78 u0_a78    0 Sep 26 22:05 file256837.txt
+-rw------- 1 u0_a78 u0_a78    0 Sep 26 22:05 file72256837.txt
