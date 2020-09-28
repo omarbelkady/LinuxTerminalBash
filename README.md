@@ -214,6 +214,12 @@ root@omarbelkady: ~$ ls -ll -t
 root@omarbelkady:~$ kill
 ```
 
+### Kill All Node Processes
+```console
+root@omarbelkady:~$ pkill -9 node
+```
+
+
 ### create a directory
 ```console
 root@omarbelkady:~$ mkdir <nameOfDir>
