@@ -27,6 +27,7 @@ root@omarbelkady: ~$ npm init
 
 
 
+
 ### HOW TO CONNECT A BE+FE
 ```
 STEP 0: NAME YOUR PROJECT
@@ -186,7 +187,10 @@ $ :set number ==> display line number
 $ :w ==> write to the file
 $ i ==> toggle insert/command mode
 $ /abc ==> Searching for the abc
+$ : ===> followed the by the first letter of the command and press tab to cycle through which command you want
 ```
+
+
 
 ### show the files in the working directory
 ```console
