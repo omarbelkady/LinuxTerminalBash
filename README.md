@@ -190,7 +190,11 @@ $ /abc ==> Searching for the abc
 $ : ===> followed the by the first letter of the command and press tab to cycle through which command you want
 ```
 
-
+### could not get lock error fix STEPS
+```bash
+root@omarbelkady:~$ ps aux | grep -i apt
+root@omarbelkady:~$ kill -9 processid
+```
 
 ### show the files in the working directory
 ```console
