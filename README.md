@@ -540,6 +540,11 @@ If vsftpd 2.3.4 is running this means I must run the vsftpd backdoor which is me
 ftp-syst.nse
 ```
 
+### Before doing a stealthy scan on the network do an ip addr to know which interface you want to scan on
+```bash
+ip addr
+```
+
 ### Discover stealthy and unhidden devices in your network using nmap scan
 ```bash
 arp-scan --interface=[puttheinterfaceyouwishtoscanhere] --localnet
