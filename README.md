@@ -540,7 +540,13 @@ If vsftpd 2.3.4 is running this means I must run the vsftpd backdoor which is me
 ftp-syst.nse
 ```
 
-I run a stealth Scan to enumerate potential paths and list any vulns
+### Discover stealthy and unhidden devices in your network using nmap scan
+```bash
+arp-scan --interface=[puttheinterfaceyouwishtoscanhere] --localnet
+```
+
+
+### I run a stealth Scan to enumerate potential paths and list any vulns
 ``` bash
 sudo nmap -p 22 -sS --script ftp-anon, ftp-syst,tftp-enum, ftp-vsftpd-backdoor 21 192.168.1.149 192.168.1.38
 ```
