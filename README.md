@@ -3,6 +3,7 @@
 ## File Structure(Level 1: / aka Root Directory)
 
 ├── /bin    => User Command Binaries or essential User Commands
+
 ├── /boot   => User's boot loader files
 
 ├── /dev    => Device Files
