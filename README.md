@@ -1,3 +1,26 @@
+# Linux Terminology And Info
+
+## File Structure(Level 1: / aka Root Directory)
+├── /bin    => User Command Binaries or essential User Commands
+├── /boot   => User's boot loader files
+├── /dev    => Device Files
+├── /etc    => System Configuration files
+├── /home   => User's home directory
+├── /lib    => User's Shared/System Libraries
+├── /media  => User's removable media
+├── /mnt    => The mounted File System Files or Mount Directory
+├── /opt    => Add-on Application Software Package or Optional Software applications
+├── /proc   => Process Information
+├── /root   => Super User's Home Directory(For 63526 its the 429 dir) 
+├── /sbin   => System Binaries
+├── /srv    => User's service Data
+├── /tmp    => Temporary Files
+├── /usr    => User Programs
+├── /var    => Variable Files
+
+
+
+
 ### STEP 1: SPIN A LIVE SERVER
 ```bash
 root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
