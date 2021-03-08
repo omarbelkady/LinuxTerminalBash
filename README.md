@@ -41,7 +41,7 @@
 ```bash
 root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 ```
-### STEP 2A: Long List of all the processes running on your local machine
+### STEP 2A: Long List of all the processes running on your local machine(List open files: lsof)
 ```bash
 root@omarbelkady:~$ lsof -i -ll
 ```
@@ -57,6 +57,27 @@ root@omarbelkady:~$ kill -9 -PROCESSID
 ### STEP 3A: If multiple processes are running instead of manually doing it one by one you can kill the processes in one line
 ```bash
 root@omarbelkady: ~$ kill -9 -PROCESSID1 -PROCESSID2 -PROCESSIDETC.
+```
+
+### Know which process does file x run
+```bash
+root@omarbelkady: ~$ lsof ~/createthis.sh
+```
+
+
+### Know which process does user XYZ have open
+```bash
+lsof -u XYZ
+```
+
+### Know which process is listening on port 429
+```bash
+lsof -i 429
+```
+
+### Know which process is using protocol abc in my case TCP
+```bash
+lsof -i tcp
 ```
 
 
