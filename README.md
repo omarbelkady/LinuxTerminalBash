@@ -326,6 +326,17 @@ The above command will run a recursive search in my examples directory for any f
 root@omarbelkady:~$ history | grep "grep" 
 ```
 
+### Find The Difference Between Two Files
+```bash
+diff fort72632.txt 7olan2632.txt
+```
+
+### Remove duplicate lines in a file and output it to the screen
+```bash
+uniq polan2632.txt
+```
+
+
 ### To run a command in history
 ```bash
 root@omarbelkady:~$ ![historyNumber]
@@ -508,7 +519,7 @@ SMTP Command and run on port 25 to enumerate users on the system and we check if
 ```
 
 
-## Git
+# Git
 
 ### How To Clone A directory
 ```bash
