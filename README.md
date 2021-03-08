@@ -328,12 +328,12 @@ root@omarbelkady:~$ history | grep "grep"
 
 ### Find The Difference Between Two Files
 ```bash
-diff fort72632.txt 7olan2632.txt
+root@omarbelkady:~$ diff fort72632.txt 7olan2632.txt
 ```
 
 ### Remove duplicate lines in a file and output it to the screen
 ```bash
-uniq polan2632.txt
+root@omarbelkady:~$ uniq polan2632.txt
 ```
 
 
