@@ -682,6 +682,14 @@ root@omarbelkady:~$ git diff --stat HEAD
 ```
 
 
+### Errors in Git
+1. Updates were rejected because the tip of your current branch is behind its remote counterpart
+a. To fix this run the command bellow
+```bash
+root@omarbelkady:~$ git pull origin master --rebase
+```
+
+
 ### Step 1: CI With Git/BitBucket/CodeCommit, etc.
 1. Developers push the code to the repository in a VCS(GitHub, CodeCommit,BitBucket,etc.)
 2. A tester in the company runs unit tests and builds what has been just pushed using (Jenkins, CodeBuild)
