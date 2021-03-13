@@ -681,6 +681,47 @@ root@omarbelkady:~$ git diff clover pascallover
 root@omarbelkady:~$ git diff --stat HEAD
 ```
 
+
+### Step 1: CI With Git/BitBucket/CodeCommit, etc.
+1. Developers push the code to the repository in a VCS(GitHub, CodeCommit,BitBucket,etc.)
+2. A tester in the company runs unit tests and builds what has been just pushed using (Jenkins, CodeBuild)
+3. The Developer hears back from the tester in regards to the tests that have passed/failed by the tester
+4. This workflow enables the team to find the bugs early, fix them, then send this project to production
+5. The result of this is that it enables us to deliver faster because the code is tested quite often
+6. We are able to make quite often deployments
+7. Developers are happy because they push their code to their branch, the tester then place their work in the build
+server, if it passes it it merged to the master branch if it is not it is sent back to the developer.
+
+### Step 2: CD With Git/BitBucket/CodeCommit, etc.
+1. SW Release is reliable and fits all the demands of the consumer
+2. Deployments happen often and quick
+3. Go from 1 Release/3 Months to 5 releases/day
+4. Number 3 happens when we have an automated deployment
+    Tools That Enable Us To Do This are:
+    I. CodeDeploy
+    II. Jenkins CD
+    III. Spinnaker
+    IV. Etc.
+5. Developers are happy because code is often push to the repository. The code is then built and tested
+6. After, the build server will receive the code build it and test it
+7. After that, the deployment server will receive the build output and branch out their version to multiple servers
+
+
+### What is the difference between Continuous Delivery(may or may not have a manual step) and Continuous Deployment(fully automated)
+1. Continuous Delivery means I am deploying often using automation
+2. A manual step may be involved so that the deployment can be approved
+3. The Deployment is still automated even if there is a manual step in our process and we also repeat this.
+4. Continuous Deployment is entire Automation meaning any change I make in my repository is fully deployed to production
+5. Continuous Deployement has no manual intervention of approvals 
+
+### Technology Stack for CICD 
+Code ⮕ Build ⮕ Test ⮕ Deploy ⮕ Provision
+a. For Code I would use either AWS Code Commit or GitHub or a third party code repository
+b. For Building And Testing I use AWS CodeBuild or Jenkins CI or any third party CI servers
+c. For Deployment and Provision I use Elastic Beanstalk or I provision infrasture with cloud formation
+    I. for deployment I would use Code Deploy
+d. To orchestrate everything I use AWS Code PipeLine
+
 ### Privellege Escalation
 #### Step 1: launch Apache web server
 ~~~
@@ -735,7 +776,7 @@ root@omarbelkady:~$ ipconfig/all
 root@omarbelkady:~$ route print
 ```
 
-#### Step 10: Search for vulnerable devices
+#### Step 10: Search for inbound and outbound connections
 ```bash
 root@omarbelkady:~$ netstat -ano
 ```
