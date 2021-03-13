@@ -717,9 +717,12 @@ server, if it passes it it merged to the master branch if it is not it is sent b
 ### Technology Stack for CICD 
 Code ⮕ Build ⮕ Test ⮕ Deploy ⮕ Provision
 a. For Code I would use either AWS Code Commit or GitHub or a third party code repository
+
 b. For Building And Testing I use AWS CodeBuild or Jenkins CI or any third party CI servers
+
 c. For Deployment and Provision I use Elastic Beanstalk or I provision infrasture with cloud formation
     I. for deployment I would use Code Deploy
+
 d. To orchestrate everything I use AWS Code PipeLine
 
 ### Privellege Escalation
