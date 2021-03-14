@@ -35,6 +35,12 @@
 ├── /var    => Variable Files
 
 
+### HTTP Codes
+- 1xx
+- 2xx
+- 3xx
+- 4xx
+- 5xx
 
 
 ### STEP 1: SPIN A LIVE SERVER
@@ -342,10 +348,37 @@ root@omarbelkady:~$ uniq polan2632.txt
 root@omarbelkady:~$ ![historyNumber]
 ```
 
+#### Permissions Code:
+- 0: No Permissions
+- 1: Execute
+- 2: Write
+- 3: Execute And Write
+- 4: Read
+- 5: Read & Execute
+- 6: Read & Write
+- 7: Read & Write & Execute
+
+
 ### Change the file permission or as written change access modes
 ```bash
 root@omarbelkady:~$ chmod [permission] [fileName]
 ```
+
+### chmod Usage
+```bash
+root@omarbelkady:~$ chmod [user][group][others] [fileName]
+```
+
+### chmod flags
+- u: user/owner
+- g: group
+- o: other
+- a: all
+
+### chmod operators
+- +: add a permission
+- -: remove a permission
+- =: set the permission and override the ones set earlier
 
 ### Display all the ip and mac addresses within your network in a table structure
 ```bash
