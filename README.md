@@ -424,6 +424,30 @@ root@omarbelkady:~$ airmon-ng check kill
 root@omarbelkady: ~$ curl url/nameofimage.jpg > nameYouWishToCallYourImage.jpg
 ```
 
+## NPM stuff
+### How To Initiate A Project with NPM
+```bash
+root@omarbelkady: ~$ npm init
+```
+
+### How To Install Missing Dependencies from someone's project into your local machine
+```bash
+root@omarbelkady: ~$ npm install
+```
+
+### How To save a dependency IN ORDER FOR YOUR APPLICATION TO RUN
+```bash
+root@omarbelkady: ~$ npm install [the_package_name] --save
+```
+
+### How To save a dependency for development purposes[e.g. when you are conducting unittests, minification,etc.]
+```bash
+root@omarbelkady: ~$ npm install [the_package_name] --save-dev
+```
+
+
+
+
 
 ## NMAP Usage
 ```bash
