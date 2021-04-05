@@ -145,7 +145,15 @@ root@omarbelkady:~$ kill
 root@omarbelkady:~$ pkill -9 node
 ```
 
+### Kill All Running Processes if you have a process that is really slow
+```console
+root@omarbelkady:~$ killall
+```
 
+### Edit easily a long command you just wrote instead of pressing up arrow
+```bash
+root@omarbelkady:~$ fc
+```
 ### create a directory
 ```console
 root@omarbelkady:~$ mkdir <nameOfDir>
