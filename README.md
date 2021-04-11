@@ -455,7 +455,7 @@ root@omarbelkady: ~$ npm install [the_package_name] --save-dev
 
 # Git
 
-### How To Clone A directory
+### Copy a git repository from a remote repo
 ```bash
 root@omarbelkady:~$ git clone <url> 
 ``` 
@@ -487,9 +487,15 @@ root@omarbelkady:~$ git checkout <nameofBranch>
 root@omarbelkady:~$ git branch -d <nameOfBranch>
 ```
 
+### Merge the master branch with branchpolfb
+```bash
+root@omarbelkady:~$ git merge branchpolfb
+```
+
+
 ### Steps To Create A New Project
 
-#### 1- Initialize An Empty Repository
+#### 1- Initialize Git in your current working directory
 ```bash
 root@omarbelkady:~$ git init
 ```
@@ -498,7 +504,7 @@ root@omarbelkady:~$ git init
 root@omarbelkady:~$ curl -u "usernameGOESHERE" https://api.github.com/user/repos -d '{"name":"NAMEYOUWANTTOGIVETOYOURREPO"}'
 ```
 
-#### 2- Add all the files to be staged
+#### 2- Add all the files in your working directory to the staging area
 ```bash
 root@omarbelkady:~$ git add .
 ```
@@ -508,7 +514,7 @@ root@omarbelkady:~$ git add .
 root@omarbelkady: ~$ git restore --staged pathOfFile
 ```
 
-#### 3- Commit the files use -m to be respectful to your peers to log what you are doing
+#### 3- Move the files from the staging area to a local repository use -m to give a specific description of your commit
 ```bash
 root@omarbelkady:~$ git commit -m "A overall description of what you just modified"
 ```
@@ -518,9 +524,19 @@ root@omarbelkady:~$ git commit -m "A overall description of what you just modifi
 root@omarbelkady:~$ git remote add origin <urlOfRepo>
 ```
 
-#### 5- Push to the repository
+#### 5- Push your local changes to the remote repository
 ```bash
 root@omarbelkady:~$ git push origin <NameOfBranch>
+```
+
+### Sets your username and email in the main conig file
+```bash
+root@omarbelkady:~$ git config
+```
+
+### Display the files which have been added to the staging area or are ready to be committed
+```bash
+root@omarbelkady:~$ git status
 ```
 
 ### Branching and Merging
@@ -530,7 +546,7 @@ root@omarbelkady:~$ git push origin <NameOfBranch>
 root@omarbelkady:~$ git branch
 ```
 
-#### IF you are in a group ALWAYS PULL THEN PUSH. In this case I am pulling from the remote Branch Everything from the repo Linux
+#### ALWAYS PULL BEFORE PUSH. Get the latest changes of your remote repository
 ```bash
 root@omarbelkady:~$ git pull origin . Linux
 ```
@@ -538,6 +554,11 @@ root@omarbelkady:~$ git pull origin . Linux
 #### If you are working on a feature and your friend is working on another feature and your pm tells you we need both your work now in the features repository
 ```bash
 root@omarbelkady:~$ git merge features
+```
+
+#### List all the branches in your remote repository
+```bash
+root@omarbelkady:~$ git branch
 ```
 
 #### Rename a branch
