@@ -231,6 +231,7 @@ root@omarbelkady:~$ whoami
 ```bash
 exit
 ```
+m
 ### echo
 Prints..... 
 ```bash
@@ -479,6 +480,16 @@ root@omarbelkady: ~$ npm install [the_package_name] --save-dev
 root@omarbelkady:~$ git clone <url> 
 ``` 
 
+### Show all commits
+```bash
+root@omarbelkady:~$ git log
+```
+
+### Show who did what and when
+```bash
+root@omarbelkady:~$ git blame <filename>
+```
+
 ## Continuous Workflow
 
 ### 1- Get the latest version of your project
@@ -499,6 +510,12 @@ root@omarbelkady:~$ git push origin <nameOfBranch>
 ### Goto a different branch
 ```bash
 root@omarbelkady:~$ git checkout <nameofBranch>
+```
+
+
+### Goto the previous branch
+```bash
+root@omarbelkady:~$ git checkout -
 ```
 
 ### Delete the local branch(branch on your local machine aka computer)
@@ -538,6 +555,11 @@ root@omarbelkady: ~$ git restore --staged pathOfFile
 root@omarbelkady:~$ git commit -m "A overall description of what you just modified"
 ```
 
+#### 3a- If you made a mistake in your last commit and wish to modify it
+```bash
+root@omarbelkady:~$ git commit --amend
+```
+
 #### 4- Do not forget to link your local repository to the remote repository
 ```bash
 root@omarbelkady:~$ git remote add origin <urlOfRepo>
@@ -557,8 +579,6 @@ root@omarbelkady:~$ git config
 ```bash
 root@omarbelkady:~$ git status
 ```
-
-### Branching and Merging
 
 #### Show a list of all the branches a * next to a branch means the branch you are on
 ```bash
@@ -580,62 +600,107 @@ root@omarbelkady:~$ git merge features
 root@omarbelkady:~$ git branch
 ```
 
+### Show all existing branches
+```bash
+root@omarbelkady:~$ git branch -av
+```
+
 #### Rename a branch
 ```bash
 root@omarbelkady:~$ git branch -m <OLD> <NEW>
 ```
 
 #### To rename say, for example omar which I am currently working on
+
 ```bash
 root@omarbelkady:~$ git branch -m ramo
 ```
 
+### Undoing stuff
+
+#### Discard all local modication in your current working dir
+
+```bash
+root@omarbelkady:~$ git reset --hard HEAD
+```
+
+#### Discard local changes you made to a specific file
+
+```bash
+root@omarbelkady:~$ git checkout HEAD <fileName>
+```
+
+### Reset your head pointer to a previous commit and preserve all changes as unstaged changes
+
+```bash
+root@omarbelkady:~$ git reset <commit>
+```
+
+
+### Reset your head pointer to a previous commit and preserve all uncommited local changes
+
+```bash
+root@omarbelkady:~$ git reset --keep <commit>
+```
+
 
 #### How To Delete Project
+
 ##### 1- Delete The Local branch
+
 ```bash
 root@omarbelkady:~$ git branch -d <nameofBranch>
 ```
 
 ##### 2- Delete The Remote branch
+
 ```bash
 root@omarbelkady:~$ git push origin :<nameofBranch>
 ```
 
 ##### 3- Sync your local changes with your remote changes
+
 ```bash
 root@omarbelkady:~$ git pull origin master
 ```
 
 
 ### Comparing Revisions
+
 #### Show the difference between master branch(locally) and master branch(remote-GitHub)
+
 ```bash
 root@omarbelkady:~$ git diff origin..master
 ```
 
 #### Show the difference between two branches a: clover b: pascallover
+
 ```bash
 root@omarbelkady:~$ git diff clover pascallover
 ```
 
 
 #### Show the difference between work that has been committed and not been committed
+
 ```bash
 root@omarbelkady:~$ git diff --stat HEAD
 ```
 
 
 ### Errors in Git
+
 1. Updates were rejected because the tip of your current branch is behind its remote counterpart
 a. To fix this run the command bellow
+
 ```bash
 root@omarbelkady:~$ git pull origin master --rebase
 ```
 
 
 ### Step 1: CI With Git/BitBucket/CodeCommit, etc.
+
 1. Developers push the code to the repository in a VCS(GitHub, CodeCommit,BitBucket,etc.)
+
 2. A tester in the company runs unit tests and builds what has been just pushed using (Jenkins, CodeBuild)
 3. The Developer hears back from the tester in regards to the tests that have passed/failed by the tester
 4. This workflow enables the team to find the bugs early, fix them, then send this project to production
@@ -645,6 +710,7 @@ root@omarbelkady:~$ git pull origin master --rebase
 server, if it passes it it merged to the master branch if it is not it is sent back to the developer.
 
 ### Step 2: CD With Git/BitBucket/CodeCommit, etc.
+
 1. SW Release is reliable and fits all the demands of the consumer
 2. Deployments happen often and quick
 3. Go from 1 Release/3 Months to 5 releases/day
@@ -660,6 +726,7 @@ server, if it passes it it merged to the master branch if it is not it is sent b
 
 
 ### What is the difference between Continuous Delivery(may or may not have a manual step) and Continuous Deployment(fully automated)
+
 1. Continuous Delivery means I am deploying often using automation
 2. A manual step may be involved so that the deployment can be approved
 3. The Deployment is still automated even if there is a manual step in our process and we also repeat this.
@@ -667,6 +734,7 @@ server, if it passes it it merged to the master branch if it is not it is sent b
 5. Continuous Deployement has no manual intervention of approvals 
 
 ### Technology Stack for CICD 
+
 Code ⮕ Build ⮕ Test ⮕ Deploy ⮕ Provision
 
 a. For Code I would use either AWS Code Commit or GitHub or a third party code repository
