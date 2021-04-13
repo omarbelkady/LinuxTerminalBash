@@ -134,7 +134,6 @@ root@omarbelkady:~$ ls -ll
 root@omarbelkady: ~$ ls -ll -t
 ```
 
-
 ### Stop an existing process
 ```console
 root@omarbelkady:~$ kill
@@ -211,7 +210,6 @@ root@omarbelkady: ~$ sudo chmod 777 /
 root@omarbelkady: ~$ cd /
 ```
 
-
 ### go up 1 directory
 ```console
 root@omarbelkady:~$ cd .. 
@@ -229,9 +227,13 @@ root@omarbelkady:~$ whoami
 
 ### End the current bash session or terminal
 ```bash
-exit
+root@omarbelkady:~$ exit
 ```
+<<<<<<< HEAD
 m
+=======
+
+>>>>>>> 061f9f1494d9b4be56eb464a08411623a67f2d0b
 ### echo
 Prints..... 
 ```bash
