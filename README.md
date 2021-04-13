@@ -159,7 +159,7 @@ root@omarbelkady:~$ fc
 root@omarbelkady:~$ mkdir <nameOfDir>
 ```
 
-### remove a filled directory but keep the subdirectories
+### Delete folders recursively
 ```console
 root@omarbelkady:~$ rm -r <nameOfDir>
 ```
@@ -169,9 +169,19 @@ root@omarbelkady:~$ rm -r <nameOfDir>
 root@omarbelkady:~$ rm -rf <nameOfDir>
 ```
 
+### Removes the given directory
+```console
+root@omarbelkady:~$ rmdir <dirname>
+```
+
 ### Move a directory with its contents to another location
 ```console
 root@omarbelkady:~$ mv -v <ORIGINALPATH> <DESTINATIONPATH>
+```
+
+### View contents of a zip file without extracting it
+```bash
+unzip -l <fileToextract.zip>
 ```
 
 
@@ -217,6 +227,10 @@ root@omarbelkady:~$ cd ../..
 root@omarbelkady:~$ whoami
 ```
 
+### End the current bash session or terminal
+```bash
+exit
+```
 ### echo
 Prints..... 
 ```bash
@@ -267,6 +281,11 @@ root@omarbelkady:~$ cal 2020
 ### displays manual for all the possible commands you can run
 ```bash
 root@omarbelkady:~$ man
+```
+
+### whatis is a command used to display a brief description of a certain command
+```bash
+root@omarbelkady:~$ whatis<commandname>
 ```
 
 ### execute the file
@@ -413,7 +432,7 @@ root@omarbelkady:~$ macchanger -r eth0
 root@omarbelkady:~$ ifconfig | grep ether
 ```
 
-### How to know which command you can run on the specific file
+### Print the contents of a file within the terminal
 ```console
 root@omarbelkady:~$ cat [nameOfFile]
 ```
