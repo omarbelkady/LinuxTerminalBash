@@ -43,6 +43,24 @@
 - 5xx
 
 
+### Ports
+### Description
+
+| Port | Service |  Protocol
+| ----------- | ----------- | ----------- |
+| 20/21 | FTP | TCP |
+| 22 | SSH | TCP |
+| 23 | Telnet | TCP |
+| 25 | SMTP | TCP |
+| 53 | DNS | TCP/UDP |
+| 69 | TFTP | UDP |
+| 80 | HTTP | TCP |
+| 110 | POP3 | TCP |
+| 135 | RPC | TCP |
+| 161/162 | SNMP | UDP |
+| 1433/1434 | MSSQL | UDP |
+
+
 ### STEP 1: SPIN A LIVE SERVER
 ```bash
 root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
