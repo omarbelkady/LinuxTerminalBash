@@ -247,11 +247,8 @@ root@omarbelkady:~$ whoami
 ```bash
 root@omarbelkady:~$ exit
 ```
-<<<<<<< HEAD
-m
-=======
 
->>>>>>> 061f9f1494d9b4be56eb464a08411623a67f2d0b
+
 ### echo
 Prints..... 
 ```bash
