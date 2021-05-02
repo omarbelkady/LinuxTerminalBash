@@ -480,14 +480,35 @@ root@omarbelkady: ~$ npm init
 root@omarbelkady: ~$ npm install
 ```
 
-### How To save a dependency IN ORDER FOR YOUR APPLICATION TO RUN
+### How To Install A Dependency Globally
+```bash
+root@omarbelkady: ~$ npm install -g [the_package_name]
+```
+
+
+### How To save a dependency in package.json within dependencies
 ```bash
 root@omarbelkady: ~$ npm install [the_package_name] --save
 ```
 
-### How To save a dependency for development purposes[e.g. when you are conducting unittests, minification,etc.]
+### How To save a dependency in devDependencies[e.g. when you are conducting unittests, minification,etc.]
 ```bash
 root@omarbelkady: ~$ npm install [the_package_name] --save-dev
+```
+
+### List all the packages in your project and -g flag for global modules
+```bash
+root@omarbelkady: ~$ npm list
+```
+
+### Uninstall a module from the project and -g flag for global modules --save for rm from attr dep and --save-dev for rm from attr dev_dep
+```bash
+root@omarbelkady: ~$ npm remove [package_name]
+```
+
+### Update a module version and -g flag for global modules 
+```bash
+root@omarbelkady: ~$ npm update [package_name]
 ```
 
 # Git
