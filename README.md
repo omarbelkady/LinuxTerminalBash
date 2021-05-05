@@ -682,12 +682,23 @@ root@omarbelkady:~$ git reset <commit>
 ```
 
 
+### Reset in a particular time with a specified index code e.g. a69103b
+
+```bash
+root@omarbelkady:~$ git reset HEAD@{INDEX_CODE}
+```
+
+
 ### Reset your head pointer to a previous commit and preserve all uncommited local changes
 
 ```bash
 root@omarbelkady:~$ git reset --keep <commit>
 ```
 
+### Remove a file from the previous commit
+```bash
+root@omarbelkady:~$ git rm --cached <file_to_del>
+```
 
 #### How To Delete Project
 
