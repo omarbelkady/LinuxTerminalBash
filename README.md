@@ -523,6 +523,12 @@ root@omarbelkady:~$ git clone <url>
 root@omarbelkady:~$ git log
 ```
 
+
+### Shows you what changes you made in each commit [exactly the same as git log]
+```bash
+root@omarbelkady:~$ git whatchanged
+```
+
 ### Show who did what and when
 ```bash
 root@omarbelkady:~$ git blame <filename>
@@ -607,6 +613,7 @@ root@omarbelkady:~$ git remote add origin <urlOfRepo>
 ```bash
 root@omarbelkady:~$ git push origin <NameOfBranch>
 ```
+
 
 ### Sets your username and email in the main conig file
 ```bash
