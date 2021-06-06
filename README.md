@@ -263,6 +263,41 @@ root@omarbelkady:~$ alias ll='ls -al'
 root@omarbelkady:~$ alias root='cd /'
 ```
 
+
+
+### Sed: replace text within a file
+```bash
+root@omarbelkady:~$ sed s/bernard/dj/g bestprof.txt
+```
+
+### Sed: print the 32nd line
+```bash
+root@omarbelkady:~$ sed -n 32 p
+```
+
+### Sed: Print lines 37532-42932
+```bash
+root@omarbelkady:~$ sed -n 37532,42932p
+```
+
+
+### Sed: Append FB after lines containing 765anco
+```bash
+root@omarbelkady:~$ sed '/765anco/a FB'
+```
+
+### Sed: Delete the 429th line
+```bash
+root@omarbelkady:~$ sed 429d
+```
+
+### Sed: Delete lines matching brnrdfb
+```bash
+root@omarbelkady:~$ sed /brnrdfb/d
+```
+
+
+
 ### go forward between one word to the next word in your command
 alt+f
 
@@ -658,7 +693,7 @@ root@omarbelkady:~$ git branch -m <OLD> <NEW>
 #### To rename say, for example omar which I am currently working on
 
 ```bash
-root@omarbelkady:~$ git branch -m ramo
+root@omarbelkady(omar):~$ git branch -m ramo
 ```
 
 ### Undoing stuff
@@ -667,6 +702,11 @@ root@omarbelkady:~$ git branch -m ramo
 
 ```bash
 root@omarbelkady:~$ git reset --hard HEAD
+```
+
+#### Unstage A File
+```bash
+root@omarbelkady:~$ git reset <fileyouwishtounstage>
 ```
 
 #### Discard local changes you made to a specific file
@@ -741,6 +781,13 @@ root@omarbelkady:~$ git diff clover pascallover
 ```bash
 root@omarbelkady:~$ git diff --stat HEAD
 ```
+
+#### Show the difference what is staged and not yet committed
+
+```bash
+root@omarbelkady:~$ git diff --staged
+```
+
 
 
 ### Errors in Git
