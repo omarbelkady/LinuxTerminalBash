@@ -34,6 +34,44 @@
 
 ├── /var    => Variable Files
 
+### 7 Layers in IT:
+
+- Physical Layer: Data Unit Layer is in binary bits(1/0). Primary resp of this layer is to send&receive bitch
+    - layer specifications:
+        - electrical
+        - mechanical
+        - procedural
+        - functional
+
+- Data Link Layer: Data unit at this layer is the frame. It is attached to the src&dest address i.e. MAC address.
+    - Its size is 48bits/6bytes
+    - Represented in 12digits hexadec
+
+- Network Layer: Data unit at this layer are Packets. This is primarily responsible:
+
+    - for managing device addressing
+    - tracking location of devices on the netowrk
+    - determines the best way to move data around i.e. move traffic between devices which aren't locally attached
+    - Routers are precisely mentioned in this layer and provide us with routing services within the inner network
+
+- Transport Layer(aka E2E Layer): Data unit at this layer is a Segment.
+
+    - Provides end to end delivery of every single individual packet
+
+- Session Layer: In charge of setting up, managing and tearing down session between the presentation layer objects.
+    
+    - provides dialog control in between the devices or nodes. It syncs communication between sys and makes sure that the communication is organized by offering three unique modes: simplex, half duplex and full duplex
+
+- Presentation Layer: In charge of presenting the data to the application layer and formats the code
+
+    - Layer is in other words, a translator and provides coding and conversation functionality
+    - A  good data transfer technique is to be able to adapt the data into a standard format before transmission
+
+- Application Layer: marks the location where users usually talk to the communication. Only in need when you need to access the netowrk soon, e.g. IE
+
+
+
+
 
 ### HTTP Codes
 - 1xx
