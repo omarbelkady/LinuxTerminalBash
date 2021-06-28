@@ -215,6 +215,11 @@ root@omarbelkady:~$ pkill -9 node
 root@omarbelkady:~$ killall
 ```
 
+### Freeze the terminal for a specific period of time
+```console
+root@omarbelkady:~$ sleep [timeInSeconds]
+```
+
 ### Edit easily a long command you just wrote instead of pressing up arrow
 ```bash
 root@omarbelkady:~$ fc
@@ -271,6 +276,13 @@ root@omarbelkady: ~$ ls
 ```console
 root@omarbelkady: ~$ sudo chmod 777 /
 ```
+
+### Switch to different user or super user
+
+```bash
+root@omarbelkady:~$ su (yourusernamegoeshere)
+```
+
 ### Change directory to root
 ```console
 root@omarbelkady: ~$ cd /
@@ -386,7 +398,7 @@ root@omarbelkady:~$ man
 
 ### whatis is a command used to display a brief description of a certain command
 ```bash
-root@omarbelkady:~$ whatis<commandname>
+root@omarbelkady:~$ whatis <commandname>
 ```
 
 ### execute the file
@@ -533,9 +545,19 @@ root@omarbelkady:~$ macchanger -r eth0
 root@omarbelkady:~$ ifconfig | grep ether
 ```
 
-### Print the contents of a file within the terminal
+### Concatenates and the contents of a file within the terminal
 ```console
 root@omarbelkady:~$ cat [nameOfFile]
+```
+
+### Creates and Extract gzip files
+```console
+root@omarbelkady:~$ gzip -d [nameOfFile]
+```
+
+### To open and unzip a given zip file
+```console
+root@omarbelkady:~$ unzip [nameOfFile].zip
 ```
 
 ### Reboot From the Terminal
@@ -558,9 +580,19 @@ root@omarbelkady: ~$ curl url/nameofimage.jpg > nameYouWishToCallYourImage.jpg
 root@omarbelkady: ~$ npm init
 ```
 
+### How To Initialize A Project with Default Vals in NPM
+```bash
+root@omarbelkady: ~$ npm init -y
+```
+
 ### How To Install Missing Dependencies from someone's project into your local machine
 ```bash
 root@omarbelkady: ~$ npm install
+```
+
+### How To Install A Specific Version of a package
+```bash
+root@omarbelkady: ~$ npm i packagename@version
 ```
 
 ### How To Install A Dependency Globally
@@ -574,10 +606,26 @@ root@omarbelkady: ~$ npm install -g [the_package_name]
 root@omarbelkady: ~$ npm install [the_package_name] --save
 ```
 
+### How To install a dev dependency in package.json 
+```bash
+root@omarbelkady: ~$ npm install -d [the_package_name]
+```
+
 ### How To save a dependency in devDependencies[e.g. when you are conducting unittests, minification,etc.]
 ```bash
 root@omarbelkady: ~$ npm install [the_package_name] --save-dev
 ```
+
+### How To install a dependency in devDependencies
+```bash
+root@omarbelkady: ~$ npm i -d [the_package_name]
+```
+
+### Info About A specific package
+```bash
+root@omarbelkady: ~$ npm view [the_package_name]
+```
+
 
 ### List all the packages in your project and -g flag for global modules
 ```bash
@@ -650,9 +698,20 @@ root@omarbelkady:~$ git checkout -
 root@omarbelkady:~$ git branch -d <nameOfBranch>
 ```
 
+### Find branch by commit number
+```bash
+root@omarbelkady:~$ git branch -contains<COMMIT_NUMBER>
+```
+
 ### Merge the master branch with branchpolfb
 ```bash
 root@omarbelkady:~$ git merge branchpolfb
+```
+
+### Time Travel i.e. Shows you everything you have done so far
+
+```bash
+root@omarbelkady:~$ git reflog
 ```
 
 
@@ -761,6 +820,12 @@ root@omarbelkady:~$ git reset <fileyouwishtounstage>
 
 ```bash
 root@omarbelkady:~$ git checkout HEAD <fileName>
+```
+
+### Remove a file you accidentally push from the last commit
+
+```bash
+root@omarbelkady:~$ git rm --cached <nameOfFileYouAcccidentallyCommitted>
 ```
 
 ### Reset your head pointer to a previous commit and preserve all changes as unstaged changes
