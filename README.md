@@ -215,6 +215,12 @@ root@omarbelkady:~$ pkill -9 node
 root@omarbelkady:~$ killall
 ```
 
+### Display all current jobs running in the background
+```console
+root@omarbelkady:~$ jobs
+```
+
+
 ### Freeze the terminal for a specific period of time
 ```console
 root@omarbelkady:~$ sleep [timeInSeconds]
@@ -224,6 +230,7 @@ root@omarbelkady:~$ sleep [timeInSeconds]
 ```bash
 root@omarbelkady:~$ fc
 ```
+
 ### create a directory
 ```console
 root@omarbelkady:~$ mkdir <nameOfDir>
@@ -239,10 +246,16 @@ root@omarbelkady:~$ rm -r <nameOfDir>
 root@omarbelkady:~$ rm -rf <nameOfDir>
 ```
 
-### Removes the given directory
+### Removes an empty directory
 ```console
 root@omarbelkady:~$ rmdir <dirname>
 ```
+
+### Find out how much memory a directory/file takes
+```console
+root@omarbelkady:~$ du <nameOfDir/fileName>
+```
+
 
 ### Move a directory with its contents to another location
 ```console
@@ -273,6 +286,11 @@ root@omarbelkady: ~$ ls
 ```
 
 ### Give root privelleges to for current user
+```console
+root@omarbelkady: ~$ sudo chmod 777 /
+```
+
+### Perform a task that requires administrative privelleges
 ```console
 root@omarbelkady: ~$ sudo chmod 777 /
 ```
@@ -430,6 +448,11 @@ root@omarbelkady:~$ brew install tree
 root@omarbelkady:~$ touch [filename]
 ```
 
+### create and open a file in the text editor
+```bash
+root@omarbelkady:~$ nano [filename]
+```
+
 ### Copy
 ```bash
 root@omarbelkady:~$ cp *.txt [pathtothedirectory]
@@ -504,6 +527,11 @@ root@omarbelkady:~$ ![historyNumber]
 root@omarbelkady:~$ chmod [permission] [fileName]
 ```
 
+### Add A user
+```bash
+root@omarbelkady:~$ useradd joey
+```
+
 ### chmod Usage
 ```bash
 root@omarbelkady:~$ chmod [user][group][others] [fileName]
@@ -545,7 +573,7 @@ root@omarbelkady:~$ macchanger -r eth0
 root@omarbelkady:~$ ifconfig | grep ether
 ```
 
-### Concatenates and the contents of a file within the terminal
+### List the contents of a file as standard output
 ```console
 root@omarbelkady:~$ cat [nameOfFile]
 ```
