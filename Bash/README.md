@@ -1,5 +1,27 @@
 ## Bash Walkthrough
 
+### Print Stuff
+
+```bash
+echo "blablabla"
+```
+
+### Declaring A Variable
+
+```bash
+MYVAR="HEYTHERE"
+#reference it using a dollar sign in front of the name
+echo $MYVAR
+```
+
+
+### How To Write A Script
+
+```bash
+#!/path/of/app/to/run/your/script
+
+```
+
 
 ### Comment
 
@@ -14,12 +36,26 @@ This is a multi-line comment
 ### While Loop
 
 ```bash
-#!/bin/bash
+#!/usr/bin/bash
 i=15
 while [ $i -le 17 ]
     do
         echo "Number is: "$i
         ((i++))
+done
+```
+
+### While Loop for a y/n answer
+
+```bash
+while true;
+do
+    read -p "Do You Want To Learn Bash" yaynay
+    case $yaynay in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no!";;
+    esac
 done
 ```
 
@@ -48,7 +84,7 @@ echo "Your input was: $user_input"
 ### Creating Directory
 
 ```bash
-#!/bin/bash
+#!/usr/bin/bash
 echo -n "What would you like your directory to be called: "
 read dirname
 commandtorun="mkdir $dirname"
@@ -60,10 +96,18 @@ echo "New directory created "
 ### Sending An Email
 
 ```bash
-#!/bin/bash
+#!/usr/bin/bash
 echo -n "Who would you like to send a message to? "
 read recipient
 subject="Welcome"
 message="Welcome to my repository please learn Bash"
 `mail -s $subject $recipient <<< $message`
+```
+
+
+### Run Sth in The Background i.e. Run lpr command in the background
+
+```bash
+#!/usr/bin/bash
+ls -l | lpr &
 ```
