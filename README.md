@@ -246,6 +246,12 @@ root@omarbelkady:~$ rm -r <nameOfDir>
 root@omarbelkady:~$ rm -rf <nameOfDir>
 ```
 
+### remove a node_modules directory and its subdirectories in the background
+```console
+root@omarbelkady:~$ rm -rf node_modules &
+```
+
+
 ### Removes an empty directory
 ```console
 root@omarbelkady:~$ rmdir <dirname>
@@ -572,6 +578,23 @@ root@omarbelkady:~$ macchanger -r eth0
 ```console
 root@omarbelkady:~$ ifconfig | grep ether
 ```
+
+### Disable A Network Interface 
+```console
+root@omarbelkady:~$ ifconfig eth0 down
+```
+
+### Enable Promiscuous Mode Within A Network Interface 
+```console
+root@omarbelkady:~$ ifconfig eth0 promisc
+```
+
+### Disable Promiscuous Mode Within A Network Interface 
+```console
+root@omarbelkady:~$ ifconfig eth0 -promisc
+```
+
+
 
 ### List the contents of a file as standard output
 ```console
