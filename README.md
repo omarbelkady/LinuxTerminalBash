@@ -126,6 +126,7 @@ root@omarbelkady:~$ ps -e|grep node
 ```bash
 root@omarbelkady:~$ kill -9 -PROCESSID
 ```
+
 ### STEP 3A: If multiple processes are running instead of manually doing it one by one you can kill the processes in one line
 ```bash
 root@omarbelkady: ~$ kill -9 -PROCESSID1 -PROCESSID2 -PROCESSIDETC.
@@ -174,11 +175,7 @@ $ /abc ==> Searching for the abc
 $ : ===> followed the by the first letter of the command and press tab to cycle through which command you want
 ```
 
-### could not get lock error fix STEPS
-```bash
-root@omarbelkady:~$ ps aux | grep -i apt
-root@omarbelkady:~$ kill -9 processid
-```
+
 
 ### show the files in the working directory
 ```console
@@ -210,12 +207,20 @@ root@omarbelkady:~$ kill
 root@omarbelkady:~$ pkill -9 node
 ```
 
-### Kill All Running Processes if you have a process that is really slow
+
+### Kill A Process By Name
 ```console
 root@omarbelkady:~$ killall
 ```
 
-### Display all current jobs running in the background
+### could not get lock error fix STEPS
+```bash
+root@omarbelkady:~$ ps aux | grep -i apt
+root@omarbelkady:~$ kill -9 processid
+```
+
+
+### List All Active Jobs
 ```console
 root@omarbelkady:~$ jobs
 ```
@@ -559,10 +564,21 @@ root@omarbelkady:~$ chmod [user][group][others] [fileName]
 root@omarbelkady:~$ arp -a
 ```
 
-### How to find your mac address
+### Configure A Network Interface
 ```bash
 root@omarbelkady:~$ ifconfig
 ```
+
+### Stop A Network Interface
+```bash
+root@omarbelkady:~$ ifdown
+```
+
+### Start A Network Interface
+```bash
+root@omarbelkady:~$ ifup
+```
+
 
 ### Display Your mac address
 ```bash
@@ -620,6 +636,7 @@ root@omarbelkady:~$ reboot
 ```console
 root@omarbelkady:~$ airmon-ng check kill
 ```
+
 ### Download an image from the terminal and pipe it with a specific name of your choice
 ```bash
 root@omarbelkady: ~$ curl url/nameofimage.jpg > nameYouWishToCallYourImage.jpg
