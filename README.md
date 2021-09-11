@@ -67,6 +67,7 @@
 - Session Layer[Layer 5]: In charge of setting up, managing and tearing down session between the presentation layer objects.
     
     - provides dialog control in between the devices or nodes. It syncs communication between sys and makes sure that the communication is organized by offering three unique modes: simplex, half duplex and full duplex
+    
     - Uses: API's, Sockets, WinSock
 
 - Presentation Layer[Layer 6]: In charge of presenting the data to the application layer and formats the code
@@ -74,16 +75,13 @@
     - Layer is in other words, a translator and provides coding and conversation functionality
     - A  good data transfer technique is to be able to adapt the data into a standard format before transmission
     - Uses: SSL, SSH, IMAP, FTP, MPEG, JPEG
-    
 
 - Application Layer[Layer 7]: marks the location where users usually talk to the communication. Only in need when you need to access the netowrk soon, e.g. IE
+
     - Uses: HTTP, FTP, IRC, SSH, DNS
 
-
-
-
-
 ### HTTP Codes
+
 - 1xx
 - 2xx
 - 3xx
@@ -92,6 +90,7 @@
 
 
 ### Ports
+
 ### Description
 
 | Port | Service |  Protocol
@@ -110,56 +109,67 @@
 
 
 ### STEP 1: SPIN A LIVE SERVER
+
 ```bash
 root@omarbelkady:~$ http-server ./NAMEOFDIR -p PORTNUM
 ```
+
 ### STEP 2A: Long List of all the processes running on your local machine(List open files: lsof)
+
 ```bash
 root@omarbelkady:~$ lsof -i -ll
 ```
+
 ### STEP 2A: Long List of all the processes running on your local machine if you use npm
+
 ```bash
 root@omarbelkady:~$ ps -e|grep node
 ```
 
 ### STEP 3: Make sure to kill the process after use to be able to use it again
+
 ```bash
 root@omarbelkady:~$ kill -9 -PROCESSID
 ```
 
 ### STEP 3A: If multiple processes are running instead of manually doing it one by one you can kill the processes in one line
+
 ```bash
 root@omarbelkady: ~$ kill -9 -PROCESSID1 -PROCESSID2 -PROCESSIDETC.
 ```
 
 ### Know which process does file x run
+
 ```bash
 root@omarbelkady: ~$ lsof ~/createthis.sh
 ```
 
 
 ### Know which process does user XYZ have open
+
 ```bash
 lsof -u XYZ
 ```
 
 ### Know which process is listening on port 429
+
 ```bash
 lsof -i 429
 ```
 
 ### Know which process is using protocol abc in my case TCP
+
 ```bash
 lsof -i tcp
 ```
 
-
 ### HOW TO DEPLOY LIVE SERVER ON MY MACHINE
+
 [![Screenshot-2020-08-03-at-3-47-03-AM.png](https://i.postimg.cc/0jqPVgdN/Screenshot-2020-08-03-at-3-47-03-AM.png)](https://postimg.cc/KkQ6YHWX)
 [![Screenshot-2020-08-03-at-3-47-17-AM.png](https://i.postimg.cc/G2FZh4Gc/Screenshot-2020-08-03-at-3-47-17-AM.png)](https://postimg.cc/S2KZgNg5)
 
-
 #### Vim
+
 ```
 $ v ==> Copy the character
 $ V ==> Copy the entire line
@@ -175,45 +185,51 @@ $ /abc ==> Searching for the abc
 $ : ===> followed the by the first letter of the command and press tab to cycle through which command you want
 ```
 
+### Show the files in the working directory
 
-
-### show the files in the working directory
 ```console
 root@omarbelkady:~$ ls
 ```
 
-### show all the files in the working directory including the hidden files
+### Show all the files in the working directory including the hidden files
+
 ```console
 root@omarbelkady:~$ ls -la
 ```
 
-### show all the files in the working directory with their permissions in a long list format
+### Show all the files in the working directory with their permissions in a long list format
+
 ```console
 root@omarbelkady:~$ ls -ll
 ```
 
-### show all the files in the working directory with their permissions in a long list format in sorted order by date:time
+### Long list format in sorted order by date:time of all your files,dirs and their Permissions
+
 ```console
 root@omarbelkady: ~$ ls -ll -t
 ```
 
 ### Stop an existing process
+
 ```console
 root@omarbelkady:~$ kill
 ```
 
 ### Kill All Node Processes
+
 ```console
 root@omarbelkady:~$ pkill -9 node
 ```
 
 
 ### Kill A Process By Name
+
 ```console
 root@omarbelkady:~$ killall
 ```
 
-### could not get lock error fix STEPS
+### Could not get lock error fix STEPS
+
 ```bash
 root@omarbelkady:~$ ps aux | grep -i apt
 root@omarbelkady:~$ kill -9 processid
@@ -221,74 +237,89 @@ root@omarbelkady:~$ kill -9 processid
 
 
 ### List All Active Jobs
+
 ```console
 root@omarbelkady:~$ jobs
 ```
 
 
 ### Freeze the terminal for a specific period of time
+
 ```console
 root@omarbelkady:~$ sleep [timeInSeconds]
 ```
 
 ### Edit easily a long command you just wrote instead of pressing up arrow
+
 ```bash
 root@omarbelkady:~$ fc
 ```
 
-### create a directory
+### Create a directory
+
 ```console
 root@omarbelkady:~$ mkdir <nameOfDir>
 ```
 
 ### Delete folders recursively
+
 ```console
 root@omarbelkady:~$ rm -r <nameOfDir>
 ```
 
-### remove a filled directory and the subdirectories
+### Force Remove A Filled Directory
+
 ```console
 root@omarbelkady:~$ rm -rf <nameOfDir>
 ```
 
-### remove a node_modules directory and its subdirectories in the background
+### Remove a node_modules directory and its subdirectories in the background
+
 ```console
 root@omarbelkady:~$ rm -rf node_modules &
 ```
 
 
 ### Removes an empty directory
+
 ```console
 root@omarbelkady:~$ rmdir <dirname>
 ```
 
 ### Find out how much memory a directory/file takes
+
 ```console
 root@omarbelkady:~$ du <nameOfDir/fileName>
 ```
 
 
 ### Move a directory with its contents to another location
+
 ```console
 root@omarbelkady:~$ mv -v <ORIGINALPATH> <DESTINATIONPATH>
 ```
 
 ### View contents of a zip file without extracting it
+
 ```bash
 unzip -l <fileToextract.zip>
 ```
 
 
-### print working directory
+### Spits Out The Full Path in the Terminal
+
 ```console
 root@omarbelkady:~$ pwd
 ```
 
-### Change directory to home 
+### Change directory to home
+
 ```console
 root@omarbelkady:~$ cd ~
 ```
+
 ### List all the packages installed navigate to usr and change your directory to the bin folder and list all the files
+
 ```console
 root@omarbelkady: ~$ cd ~
 root@omarbelkady: ~$ cd ..
@@ -297,11 +328,13 @@ root@omarbelkady: ~$ ls
 ```
 
 ### Give root privelleges to for current user
+
 ```console
 root@omarbelkady: ~$ sudo chmod 777 /
 ```
 
 ### Perform a task that requires administrative privelleges
+
 ```console
 root@omarbelkady: ~$ sudo chmod 777 /
 ```
@@ -313,38 +346,46 @@ root@omarbelkady:~$ su (yourusernamegoeshere)
 ```
 
 ### Change directory to root
+
 ```console
 root@omarbelkady: ~$ cd /
 ```
 
-### go up 1 directory
+### Go up 1 directory
+
 ```console
 root@omarbelkady:~$ cd .. 
 ```
 
-### go back 2 directories
+### Go back 2 directories
+
 ```console
 root@omarbelkady:~$ cd ../.. 
 ```
 
 ### Shows the current authenticated user 
+
 ```bash
 root@omarbelkady:~$ whoami
 ```
 
 ### End the current bash session or terminal
+
 ```bash
 root@omarbelkady:~$ exit
 ```
 
 
-### echo
-Prints..... 
+### Echo
+
+- Prints..... 
+
 ```bash
 root@omarbelkady:~$ echo "Nelan 56837 6342"
 ```
 
-### alias
+### Aliasing
+
 Map a command to another command
 ```bash
 root@omarbelkady:~$ alias home='cd ~'
@@ -355,146 +396,190 @@ root@omarbelkady:~$ alias root='cd /'
 
 
 ### Sed: replace text within a file
+
 ```bash
 root@omarbelkady:~$ sed s/bernard/dj/g bestprof.txt
 ```
 
 ### Sed: print the 32nd line
+
 ```bash
 root@omarbelkady:~$ sed -n 32 p
 ```
 
 ### Sed: Print lines 37532-42932
+
 ```bash
 root@omarbelkady:~$ sed -n 37532,42932p
 ```
 
 
 ### Sed: Append FB after lines containing 765anco
+
 ```bash
 root@omarbelkady:~$ sed '/765anco/a FB'
 ```
 
 ### Sed: Delete the 429th line
+
 ```bash
 root@omarbelkady:~$ sed 429d
 ```
 
 ### Sed: Delete lines matching brnrdfb
+
 ```bash
 root@omarbelkady:~$ sed /brnrdfb/d
 ```
 
 
+### Go forward between one word to the next word in your command
 
-### go forward between one word to the next word in your command
+```
 alt+f
+```
 
-### go backward between one word to the next word in your command
+### Go backward between one word to the next word in your command
+
+```
 alt+b
+```
 
-### cancels current command
+### Cancels current command
+
+```
 ctrl+c
+```
 
-### creates a 2nd shell side by side
+### Creates a 2nd shell side by side
+
+```
 ctrl+d
+```
 
-### creates a 2nd shell below not to the side
+
+### Creates a 2nd shell below not to the side
+
+```
 cmd+shift+d
+```
 
-### autocomplete
+### Autocomplete
+
+```
 tab
+```
 
-### displays current date
+### Displays current date
+
 ```bash
 root@omarbelkady:~$ date
 ```
 
-### displays calendar
+### Displays calendar
+
 ```bash
 root@omarbelkady:~$ cal
 ```
 
-###  displays calendar for the 2020 year
+### Displays calendar for the 2020 year
+
 ```bash
 root@omarbelkady:~$ cal 2020
 ```
 
-### displays manual for all the possible commands you can run
+### Displays A manual for all the possible commands you can run
+
 ```bash
 root@omarbelkady:~$ man
 ```
 
-### whatis is a command used to display a brief description of a certain command
+### Display a brief description of a certain command
+
 ```bash
 root@omarbelkady:~$ whatis <commandname>
 ```
 
-### execute the file
+### Execute the file
+
 ```bash
 root@omarbelkady:~$ ./
 ```
 
 ### Find A file
+
 ```bash
 root@omarbelkady:~$ find /full/path/here/ "PatternOrDIRNAME" 
 ```
+
 ### Find A File With the given
+
 ```bash
 root@omarbelkady:~$ find /dir/to/searchin -name "file-to-search"
 ```
 
 ### Find in this directory and all subdirectories any file whose name has a c extension(fav extension 63526) and list them
+
 ```bash
 root@omarbelkady:~$ find . -name "*.c" -type f -ls
 ```
 
 ### install the tree command within the terminal- THIS IS A MAC EXCLUSIVE
+
 ```bash
 root@omarbelkady:~$ brew install tree 
 ```
 
-### create a file
+### Create a file
+
 ```bash
 root@omarbelkady:~$ touch [filename]
 ```
 
-### create and open a file in the text editor
+### Open a file in the text editor
+
 ```bash
 root@omarbelkady:~$ nano [filename]
 ```
 
 ### Copy
+
 ```bash
 root@omarbelkady:~$ cp *.txt [pathtothedirectory]
 ```
 
 ### copy all the files with the specified extension ino the examples directory
+
 ```bash
 root@omarbelkady:~$ cp *.extension examples
 ```
 
 ### Example: I am copying all the executable(.exe) files within my working directory into the examples directory
+
 ```bash
 root@omarbelkady:~$ cp *.exe examples
 ```
 
 ### Recursively search for all text files for a given string of text with the .txt extension
+
 ```bash
 root@omarbelkady:~$ grep "63526 47 2 2-56837" ~/*.txt
 ```
 
 ### Recursively search for all text files for 2 given strings or more 
+
 ```bash
 root@omarbelkady:~$ egrep -w -R 'assembly|2-56837|Pascal|727225' 
 ```
 
 ### Recursively search for all text files for 2 given strings or more in the NodeJS directory 
+
 ```bash
 root@omarbelkady:~$ egrep -w -R 'assembly|2-56837|Pascal|727225' ~/NodeJS
 ```
 
 ### Run a Recursive search in a directory for a specific string 
+
 ```bash
 root@omarbelkady:~$ grep -r "END" examples
 ```
@@ -502,27 +587,32 @@ root@omarbelkady:~$ grep -r "END" examples
 The above command will run a recursive search in my examples directory for any file that has the word END in it
 
 ### Display all the grep commands where I searched for the string of text grep in a file committed in history
+
 ```bash
 root@omarbelkady:~$ history | grep "grep" 
 ```
 
 ### Find The Difference Between Two Files
+
 ```bash
 root@omarbelkady:~$ diff fort72632.txt 7olan2632.txt
 ```
 
 ### Remove duplicate lines in a file and output it to the screen
+
 ```bash
 root@omarbelkady:~$ uniq polan2632.txt
 ```
 
 
 ### To run a command in history
+
 ```bash
 root@omarbelkady:~$ ![historyNumber]
 ```
 
-#### Permissions Code:
+#### Permissions Code
+
 - 0: No Permissions
 - 1: Execute
 - 2: Write
@@ -534,201 +624,236 @@ root@omarbelkady:~$ ![historyNumber]
 
 
 ### Change the file permission or as written change access modes
+
 ```bash
 root@omarbelkady:~$ chmod [permission] [fileName]
 ```
 
 ### Add A user
+
 ```bash
 root@omarbelkady:~$ useradd joey
 ```
 
 ### chmod Usage
+
 ```bash
 root@omarbelkady:~$ chmod [user][group][others] [fileName]
 ```
 
 ### chmod flags
+
 - u: user/owner
 - g: group
 - o: other
 - a: all
 
 ### chmod operators
+
 - +: add a permission
 - -: remove a permission
 - =: set the permission and override the ones set earlier
 
 ### Display all the ip and mac addresses within your network in a table structure
+
 ```bash
 root@omarbelkady:~$ arp -a
 ```
 
 ### Configure A Network Interface
+
 ```bash
 root@omarbelkady:~$ ifconfig
 ```
 
 ### Stop A Network Interface
+
 ```bash
 root@omarbelkady:~$ ifdown
 ```
 
 ### Start A Network Interface
+
 ```bash
 root@omarbelkady:~$ ifup
 ```
 
 
 ### Display Your mac address
+
 ```bash
 root@omarbelkady:~$ macchanger -s eth0
 ```
 
 ### Random Mac Address Setter
+
 ```bash
 root@omarbelkady:~$ macchanger -r eth0
 ```
 
 ### Sorted order of your mac address
+
 ```console
 root@omarbelkady:~$ ifconfig | grep ether
 ```
 
 ### Disable A Network Interface 
+
 ```console
 root@omarbelkady:~$ ifconfig eth0 down
 ```
 
 ### Enable Promiscuous Mode Within A Network Interface 
+
 ```console
 root@omarbelkady:~$ ifconfig eth0 promisc
 ```
 
 ### Disable Promiscuous Mode Within A Network Interface 
+
 ```console
 root@omarbelkady:~$ ifconfig eth0 -promisc
 ```
 
-
-
 ### List the contents of a file as standard output
+
 ```console
 root@omarbelkady:~$ cat [nameOfFile]
 ```
 
 ### Creates and Extract gzip files
+
 ```console
 root@omarbelkady:~$ gzip -d [nameOfFile]
 ```
 
 ### To open and unzip a given zip file
+
 ```console
 root@omarbelkady:~$ unzip [nameOfFile].zip
 ```
 
 ### Reboot From the Terminal
+
 ```console
 root@omarbelkady:~$ reboot
 ```
 
 ### Kill all Subprocesses
+
 ```console
 root@omarbelkady:~$ airmon-ng check kill
 ```
 
 ### Download an image from the terminal and pipe it with a specific name of your choice
+
 ```bash
 root@omarbelkady: ~$ curl url/nameofimage.jpg > nameYouWishToCallYourImage.jpg
 ```
 
 ## NPM stuff
+
 ### How To Initiate A Project with NPM
+
 ```bash
 root@omarbelkady: ~$ npm init
 ```
 
 ### How To Initialize A Project with Default Vals in NPM
+
 ```bash
 root@omarbelkady: ~$ npm init -y
 ```
 
 ### How To Install Missing Dependencies from someone's project into your local machine
+
 ```bash
 root@omarbelkady: ~$ npm install
 ```
 
 ### How To Install A Specific Version of a package
+
 ```bash
 root@omarbelkady: ~$ npm i packagename@version
 ```
 
 ### How To Install A Dependency Globally
+
 ```bash
 root@omarbelkady: ~$ npm install -g [the_package_name]
 ```
 
-
 ### How To save a dependency in package.json within dependencies
+
 ```bash
 root@omarbelkady: ~$ npm install [the_package_name] --save
 ```
 
 ### How To install a dev dependency in package.json 
+
 ```bash
 root@omarbelkady: ~$ npm install -d [the_package_name]
 ```
 
 ### How To save a dependency in devDependencies[e.g. when you are conducting unittests, minification,etc.]
+
 ```bash
 root@omarbelkady: ~$ npm install [the_package_name] --save-dev
 ```
 
 ### How To install a dependency in devDependencies
+
 ```bash
 root@omarbelkady: ~$ npm i -d [the_package_name]
 ```
 
 ### Info About A specific package
+
 ```bash
 root@omarbelkady: ~$ npm view [the_package_name]
 ```
 
 
 ### List all the packages in your project and -g flag for global modules
+
 ```bash
 root@omarbelkady: ~$ npm list
 ```
 
 ### Uninstall a module from the project and -g flag for global modules --save for rm from attr dep and --save-dev for rm from attr dev_dep
+
 ```bash
 root@omarbelkady: ~$ npm remove [package_name]
 ```
 
 ### Update a module version and -g flag for global modules 
+
 ```bash
 root@omarbelkady: ~$ npm update [package_name]
 ```
 
-# Git
+## Git
 
-### Copy a git repository from a remote repo
+### Clone A Remote Repository Locally
+
 ```bash
 root@omarbelkady:~$ git clone <url> 
 ``` 
 
 ### Show all commits
+
 ```bash
 root@omarbelkady:~$ git log
 ```
 
-
 ### Shows you what changes you made in each commit [exactly the same as git log]
+
 ```bash
 root@omarbelkady:~$ git whatchanged
 ```
 
 ### Show who did what and when
+
 ```bash
 root@omarbelkady:~$ git blame <filename>
 ```
@@ -736,42 +861,49 @@ root@omarbelkady:~$ git blame <filename>
 ## Continuous Workflow
 
 ### 1- Get the latest version of your project
+
 ```bash
 root@omarbelkady:~$ git pull origin <nameOfBranch>
 ```
 
 ### Create New Branch LOCALLY 2)-- SKIP THIS STEP IF BRANCH EXISTS
+
 ```bash
 root@omarbelkady:~$ git checkout -b <nameOfNewBranch>
 ```
 
 ### Get your local branch meaning what you have in your machine to agree with your remote branch(branch on GitHub) usually master IF YOU ARE PM
+
 ```bash
 root@omarbelkady:~$ git push origin <nameOfBranch>
 ```
 
 ### Goto a different branch
+
 ```bash
 root@omarbelkady:~$ git checkout <nameofBranch>
 ```
 
-
 ### Goto the previous branch
+
 ```bash
 root@omarbelkady:~$ git checkout -
 ```
 
 ### Delete the local branch(branch on your local machine aka computer)
+
 ```bash
 root@omarbelkady:~$ git branch -d <nameOfBranch>
 ```
 
 ### Find branch by commit number
+
 ```bash
 root@omarbelkady:~$ git branch -contains<COMMIT_NUMBER>
 ```
 
 ### Merge the master branch with branchpolfb
+
 ```bash
 root@omarbelkady:~$ git merge branchpolfb
 ```
@@ -782,85 +914,101 @@ root@omarbelkady:~$ git merge branchpolfb
 root@omarbelkady:~$ git reflog
 ```
 
-
 ### Steps To Create A New Project
 
 #### 1- Initialize Git in your current working directory
+
 ```bash
 root@omarbelkady:~$ git init
 ```
+
 ### 1a- Initialize An Empty Repository using curl Command
+
 ```bash
 root@omarbelkady:~$ curl -u "usernameGOESHERE" https://api.github.com/user/repos -d '{"name":"NAMEYOUWANTTOGIVETOYOURREPO"}'
 ```
 
 #### 2- Add all the files in your working directory to the staging area
+
 ```bash
 root@omarbelkady:~$ git add .
 ```
 
 ### 2a - If you made a mistake in Step 2 and wish to unstage a file
+
 ```bash
 root@omarbelkady: ~$ git restore --staged pathOfFile
 ```
 
 #### 3- Move the files from the staging area to a local repository use -m to give a specific description of your commit
+
 ```bash
 root@omarbelkady:~$ git commit -m "A overall description of what you just modified"
 ```
 
 #### 3a- If you made a mistake in your last commit and wish to modify it
+
 ```bash
 root@omarbelkady:~$ git commit --amend
 ```
 
-#### 4- Do not forget to link your local repository to the remote repository
+#### 4- Connect Your Local Repository To The Remote GitHub Repository
+
 ```bash
 root@omarbelkady:~$ git remote add origin <urlOfRepo>
 ```
 
 #### 5- Push your local changes to the remote repository
+
 ```bash
 root@omarbelkady:~$ git push origin <NameOfBranch>
 ```
 
 
 ### Sets your username and email in the main conig file
+
 ```bash
 root@omarbelkady:~$ git config
 ```
 
 ### Display the files which have been added to the staging area or are ready to be committed
+
 ```bash
 root@omarbelkady:~$ git status
 ```
 
 #### Show a list of all the branches a * next to a branch means the branch you are on
+
 ```bash
 root@omarbelkady:~$ git branch
 ```
 
 #### ALWAYS PULL BEFORE PUSH. Get the latest changes of your remote repository
+
 ```bash
 root@omarbelkady:~$ git pull origin . Linux
 ```
 
 #### If you are working on a feature and your friend is working on another feature and your pm tells you we need both your work now in the features repository
+
 ```bash
 root@omarbelkady:~$ git merge features
 ```
 
 #### List all the branches in your remote repository
+
 ```bash
 root@omarbelkady:~$ git branch
 ```
 
 ### Show all existing branches
+
 ```bash
 root@omarbelkady:~$ git branch -av
 ```
 
 #### Rename a branch
+
 ```bash
 root@omarbelkady:~$ git branch -m <OLD> <NEW>
 ```
@@ -880,6 +1028,7 @@ root@omarbelkady:~$ git reset --hard HEAD
 ```
 
 #### Unstage A File
+
 ```bash
 root@omarbelkady:~$ git reset <fileyouwishtounstage>
 ```
@@ -902,13 +1051,11 @@ root@omarbelkady:~$ git rm --cached <nameOfFileYouAcccidentallyCommitted>
 root@omarbelkady:~$ git reset <commit>
 ```
 
-
 ### Reset in a particular time with a specified index code e.g. a69103b
 
 ```bash
 root@omarbelkady:~$ git reset HEAD@{INDEX_CODE}
 ```
-
 
 ### Reset your head pointer to a previous commit and preserve all uncommited local changes
 
@@ -917,6 +1064,7 @@ root@omarbelkady:~$ git reset --keep <commit>
 ```
 
 ### Remove a file from the previous commit
+
 ```bash
 root@omarbelkady:~$ git rm --cached <file_to_del>
 ```
@@ -969,8 +1117,6 @@ root@omarbelkady:~$ git diff --stat HEAD
 root@omarbelkady:~$ git diff --staged
 ```
 
-
-
 ### Errors in Git
 
 1. Updates were rejected because the tip of your current branch is behind its remote counterpart
@@ -1008,7 +1154,6 @@ server, if it passes it it merged to the master branch if it is not it is sent b
 6. After, the build server will receive the code build it and test it
 7. After that, the deployment server will receive the build output and branch out their version to multiple servers
 
-
 ### What is the difference between Continuous Delivery(may or may not have a manual step) and Continuous Deployment(fully automated)
 
 1. Continuous Delivery means I am deploying often using automation
@@ -1029,6 +1174,3 @@ c. For Deployment and Provision I use Elastic Beanstalk or I provision infrastur
     I. for deployment I would use Code Deploy
 
 d. To orchestrate everything I use AWS Code PipeLine
-
-
-
