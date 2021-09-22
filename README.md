@@ -53,32 +53,31 @@
 
 - Network Layer[Layer 3]: Data unit at this layer are Packets. This is primarily responsible:
 
-    - for managing device addressing
-    - tracking location of devices on the netowrk
+  - for managing device addressing
+  - tracking location of devices on the netowrk
     - determines the best way to move data around i.e. move traffic between devices which aren't locally attached
     - Routers are precisely mentioned in this layer and provide us with routing services within the inner network
     - Uses: IP, ICMP, IPSec, IGMP
 
 - Transport Layer(aka E2E Layer)[Layer 4]: Data unit at this layer is a Segment.
 
-    - Provides end to end delivery of every single individual packet
-    - Uses: TCP, UDP
+  - Provides end to end delivery of every single individual packet
+  - Uses: TCP, UDP
 
-- Session Layer[Layer 5]: In charge of setting up, managing and tearing down session between the presentation layer objects.
-    
-    - provides dialog control in between the devices or nodes. It syncs communication between sys and makes sure that the communication is organized by offering three unique modes: simplex, half duplex and full duplex
-    
-    - Uses: API's, Sockets, WinSock
+- Session Layer[Layer 5]: In charge of setting up, managing and tearing down session between the presentation layer objects.  
+
+  - provides dialog control in between the devices or nodes. It syncs communication between sys and makes sure that the communication is organized by offering three unique modes: simplex, half duplex and full duplex
+  - Uses: API's, Sockets, WinSock
 
 - Presentation Layer[Layer 6]: In charge of presenting the data to the application layer and formats the code
 
-    - Layer is in other words, a translator and provides coding and conversation functionality
-    - A  good data transfer technique is to be able to adapt the data into a standard format before transmission
-    - Uses: SSL, SSH, IMAP, FTP, MPEG, JPEG
+  - Layer is in other words, a translator and provides coding and conversation functionality
+  - A  good data transfer technique is to be able to adapt the data into a standard format before transmission
+  - Uses: SSL, SSH, IMAP, FTP, MPEG, JPEG
 
 - Application Layer[Layer 7]: marks the location where users usually talk to the communication. Only in need when you need to access the netowrk soon, e.g. IE
 
-    - Uses: HTTP, FTP, IRC, SSH, DNS
+- Uses: HTTP, FTP, IRC, SSH, DNS
 
 ### HTTP Codes
 
@@ -170,20 +169,19 @@ lsof -i tcp
 
 #### Vim
 
-```
-$ v ==> Copy the character
-$ V ==> Copy the entire line
-Move the cursor to the end where you want to cut
-$ d ==> Cuts till that point
-$ y ==> Copy
-$ P ==> Paste before the cursor
-$ p ==> Paste after the cursor
-$ :set number ==> display line number
-$ :w ==> write to the file
-$ i ==> toggle insert/command mode
-$ /abc ==> Searching for the abc
-$ : ===> followed the by the first letter of the command and press tab to cycle through which command you want
-```
+- v ==> Copy the character
+- V ==> Copy the entire line
+- Move the cursor to the end where you want to cut
+- d ==> Cuts till that point
+- y ==> Copy
+- P ==> Paste before the cursor
+- p ==> Paste after the cursor
+- :set number ==> display line number
+- :w ==> write to the file
+- i ==> toggle insert/command mode
+- /abc ==> Searching for the abc
+- : ===> followed the by the first letter of the command and press tab to cycle through which command you want
+
 
 ### Show the files in the working directory
 
@@ -221,7 +219,6 @@ root@omarbelkady:~$ kill
 root@omarbelkady:~$ pkill -9 node
 ```
 
-
 ### Kill A Process By Name
 
 ```console
@@ -235,13 +232,11 @@ root@omarbelkady:~$ ps aux | grep -i apt
 root@omarbelkady:~$ kill -9 processid
 ```
 
-
 ### List All Active Jobs
 
 ```console
 root@omarbelkady:~$ jobs
 ```
-
 
 ### Freeze the terminal for a specific period of time
 
@@ -279,7 +274,6 @@ root@omarbelkady:~$ rm -rf <nameOfDir>
 root@omarbelkady:~$ rm -rf node_modules &
 ```
 
-
 ### Removes an empty directory
 
 ```console
@@ -292,7 +286,6 @@ root@omarbelkady:~$ rmdir <dirname>
 root@omarbelkady:~$ du <nameOfDir/fileName>
 ```
 
-
 ### Move a directory with its contents to another location
 
 ```console
@@ -304,7 +297,6 @@ root@omarbelkady:~$ mv -v <ORIGINALPATH> <DESTINATIONPATH>
 ```bash
 unzip -l <fileToextract.zip>
 ```
-
 
 ### Spits Out The Full Path in the Terminal
 
@@ -363,7 +355,7 @@ root@omarbelkady:~$ cd ..
 root@omarbelkady:~$ cd ../.. 
 ```
 
-### Shows the current authenticated user 
+### Shows the current authenticated user
 
 ```bash
 root@omarbelkady:~$ whoami
@@ -376,9 +368,7 @@ root@omarbelkady:~$ exit
 ```
 
 
-### Echo
-
-- Prints..... 
+### Echo: prints
 
 ```bash
 root@omarbelkady:~$ echo "Nelan 56837 6342"
@@ -386,14 +376,13 @@ root@omarbelkady:~$ echo "Nelan 56837 6342"
 
 ### Aliasing
 
-Map a command to another command
+- Map a command to another command
+
 ```bash
 root@omarbelkady:~$ alias home='cd ~'
 root@omarbelkady:~$ alias ll='ls -al'
 root@omarbelkady:~$ alias root='cd /'
 ```
-
-
 
 ### Sed: replace text within a file
 
@@ -412,7 +401,6 @@ root@omarbelkady:~$ sed -n 32 p
 ```bash
 root@omarbelkady:~$ sed -n 37532,42932p
 ```
-
 
 ### Sed: Append FB after lines containing 765anco
 
@@ -542,6 +530,13 @@ root@omarbelkady:~$ touch [filename]
 root@omarbelkady:~$ nano [filename]
 ```
 
+### Open a script with VS Code
+
+```bash
+root@omarbelkady:~$ code [filename]
+```
+
+
 ### Copy
 
 ```bash
@@ -566,19 +561,19 @@ root@omarbelkady:~$ cp *.exe examples
 root@omarbelkady:~$ grep "63526 47 2 2-56837" ~/*.txt
 ```
 
-### Recursively search for all text files for 2 given strings or more 
+### Recursively search for all text files for 2 given strings or more
 
 ```bash
 root@omarbelkady:~$ egrep -w -R 'assembly|2-56837|Pascal|727225' 
 ```
 
-### Recursively search for all text files for 2 given strings or more in the NodeJS directory 
+### Recursively search for all text files for 2 given strings or more in the NodeJS directory
 
 ```bash
 root@omarbelkady:~$ egrep -w -R 'assembly|2-56837|Pascal|727225' ~/NodeJS
 ```
 
-### Run a Recursive search in a directory for a specific string 
+### Run a Recursive search in a directory for a specific string
 
 ```bash
 root@omarbelkady:~$ grep -r "END" examples
@@ -603,7 +598,6 @@ root@omarbelkady:~$ diff fort72632.txt 7olan2632.txt
 ```bash
 root@omarbelkady:~$ uniq polan2632.txt
 ```
-
 
 ### To run a command in history
 
@@ -697,19 +691,19 @@ root@omarbelkady:~$ macchanger -r eth0
 root@omarbelkady:~$ ifconfig | grep ether
 ```
 
-### Disable A Network Interface 
+### Disable A Network Interface
 
 ```console
 root@omarbelkady:~$ ifconfig eth0 down
 ```
 
-### Enable Promiscuous Mode Within A Network Interface 
+### Enable Promiscuous Mode Within A Network Interface
 
 ```console
 root@omarbelkady:~$ ifconfig eth0 promisc
 ```
 
-### Disable Promiscuous Mode Within A Network Interface 
+### Disable Promiscuous Mode Within A Network Interface
 
 ```console
 root@omarbelkady:~$ ifconfig eth0 -promisc
@@ -789,7 +783,7 @@ root@omarbelkady: ~$ npm install -g [the_package_name]
 root@omarbelkady: ~$ npm install [the_package_name] --save
 ```
 
-### How To install a dev dependency in package.json 
+### How To install a dev dependency in package.json
 
 ```bash
 root@omarbelkady: ~$ npm install -d [the_package_name]
@@ -826,7 +820,7 @@ root@omarbelkady: ~$ npm list
 root@omarbelkady: ~$ npm remove [package_name]
 ```
 
-### Update a module version and -g flag for global modules 
+### Update a module version and -g flag for global modules
 
 ```bash
 root@omarbelkady: ~$ npm update [package_name]
@@ -845,6 +839,19 @@ root@omarbelkady:~$ git clone <url>
 ```bash
 root@omarbelkady:~$ git log
 ```
+
+### Show all commits in single lines
+
+```bash
+root@omarbelkady:~$ git log --oneline
+```
+
+### Show commit history for the last X commits
+
+```bash
+root@omarbelkady:~$ git log -X
+```
+
 
 ### Shows you what changes you made in each commit [exactly the same as git log]
 
@@ -878,7 +885,7 @@ root@omarbelkady:~$ git checkout -b <nameOfNewBranch>
 root@omarbelkady:~$ git push origin <nameOfBranch>
 ```
 
-### Goto a different branch
+### Switch to a different branch
 
 ```bash
 root@omarbelkady:~$ git checkout <nameofBranch>
@@ -895,6 +902,13 @@ root@omarbelkady:~$ git checkout -
 ```bash
 root@omarbelkady:~$ git branch -d <nameOfBranch>
 ```
+
+### Delete a remote branch(branch on your GitHub)
+
+```bash
+root@omarbelkady:~$ git push origin :<nameOfBranch>
+```
+
 
 ### Find branch by commit number
 
@@ -940,6 +954,12 @@ root@omarbelkady:~$ git add .
 root@omarbelkady: ~$ git restore --staged pathOfFile
 ```
 
+### 2ai - If you made a mistake in Step 2 and wish to unstage a file
+
+```bash
+root@omarbelkady: ~$ git reset HEAD nameOffile
+```
+
 #### 3- Move the files from the staging area to a local repository use -m to give a specific description of your commit
 
 ```bash
@@ -977,28 +997,36 @@ root@omarbelkady:~$ git config
 root@omarbelkady:~$ git status
 ```
 
-#### Show a list of all the branches a * next to a branch means the branch you are on
+## Branching
+
+### Delete The Local branch
+
+```bash
+root@omarbelkady:~$ git branch -d <nameofBranch>
+```
+
+### Delete The Remote branch
+
+```bash
+root@omarbelkady:~$ git push origin :<nameofBranch>
+```
+
+### List all remote and local branches
+
+```bash
+root@omarbelkady:~$ git branch -a
+```
+
+### List all the branches in your remote repository
 
 ```bash
 root@omarbelkady:~$ git branch
 ```
 
-#### ALWAYS PULL BEFORE PUSH. Get the latest changes of your remote repository
+### Rename a branch
 
 ```bash
-root@omarbelkady:~$ git pull origin . Linux
-```
-
-#### If you are working on a feature and your friend is working on another feature and your pm tells you we need both your work now in the features repository
-
-```bash
-root@omarbelkady:~$ git merge features
-```
-
-#### List all the branches in your remote repository
-
-```bash
-root@omarbelkady:~$ git branch
+root@omarbelkady:~$ git branch -m <OLD> <NEW>
 ```
 
 ### Show all existing branches
@@ -1007,17 +1035,34 @@ root@omarbelkady:~$ git branch
 root@omarbelkady:~$ git branch -av
 ```
 
-#### Rename a branch
+### Show a list of all the branches a * next to a branch means the branch you are on
 
 ```bash
-root@omarbelkady:~$ git branch -m <OLD> <NEW>
+root@omarbelkady:~$ git branch
 ```
 
-#### To rename say, for example omar which I am currently working on
+
+### To rename say, for example omar which I am currently working on
 
 ```bash
 root@omarbelkady(omar):~$ git branch -m ramo
 ```
+
+## Good Practices
+
+### ALWAYS PULL BEFORE PUSH. Get the latest changes of your remote repository
+
+```bash
+root@omarbelkady:~$ git pull origin . Linux
+```
+
+### If you are working on a feature and your friend is working on another feature and your pm tells you we need both your work now in the features repository
+
+```bash
+root@omarbelkady:~$ git merge features
+```
+
+
 
 ### Undoing stuff
 
@@ -1069,19 +1114,8 @@ root@omarbelkady:~$ git reset --keep <commit>
 root@omarbelkady:~$ git rm --cached <file_to_del>
 ```
 
-#### How To Delete Project
 
-##### 1- Delete The Local branch
 
-```bash
-root@omarbelkady:~$ git branch -d <nameofBranch>
-```
-
-##### 2- Delete The Remote branch
-
-```bash
-root@omarbelkady:~$ git push origin :<nameofBranch>
-```
 
 ##### 3- Sync your local changes with your remote changes
 
@@ -1116,6 +1150,14 @@ root@omarbelkady:~$ git diff --stat HEAD
 ```bash
 root@omarbelkady:~$ git diff --staged
 ```
+
+
+#### Show the changes made to a file
+
+```bash
+root@omarbelkady:~$ git diff filealpha
+```
+
 
 ### Errors in Git
 
