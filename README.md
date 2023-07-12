@@ -292,6 +292,17 @@ root@omarbelkady:~$ du <nameOfDir/fileName>
 root@omarbelkady:~$ mv -v <ORIGINALPATH> <DESTINATIONPATH>
 ```
 
+### Connect to a remote machine using ssh protocol
+```bash
+root@omarbelkady: ~$ ssh 192.168.1.11
+```
+
+### Connect to a remote(away) machine using ssh protocol given you know ip  and username
+```bash
+root@omarbelkady: ~$ ssh omar@192.168.1.11
+```
+
+
 ### View contents of a zip file without extracting it
 
 ```bash
