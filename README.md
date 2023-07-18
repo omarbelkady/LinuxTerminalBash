@@ -185,43 +185,43 @@ lsof -i tcp
 
 ### Show the files in the working directory
 
-```console
+```bash
 root@omarbelkady:~$ ls
 ```
 
 ### Show all the files in the working directory including the hidden files
 
-```console
+```bash
 root@omarbelkady:~$ ls -la
 ```
 
 ### Show all the files in the working directory with their permissions in a long list format
 
-```console
+```bash
 root@omarbelkady:~$ ls -ll
 ```
 
 ### Long list format in sorted order by date:time of all your files,dirs and their Permissions
 
-```console
+```bash
 root@omarbelkady: ~$ ls -ll -t
 ```
 
 ### Stop an existing process
 
-```console
+```bash
 root@omarbelkady:~$ kill
 ```
 
 ### Kill All Node Processes
 
-```console
+```bash
 root@omarbelkady:~$ pkill -9 node
 ```
 
 ### Kill A Process By Name
 
-```console
+```bash
 root@omarbelkady:~$ killall
 ```
 
@@ -234,13 +234,13 @@ root@omarbelkady:~$ kill -9 processid
 
 ### List All Active Jobs
 
-```console
+```bash
 root@omarbelkady:~$ jobs
 ```
 
 ### Freeze the terminal for a specific period of time
 
-```console
+```bash
 root@omarbelkady:~$ sleep [timeInSeconds]
 ```
 
@@ -252,43 +252,43 @@ root@omarbelkady:~$ fc
 
 ### Create a directory
 
-```console
+```bash
 root@omarbelkady:~$ mkdir <nameOfDir>
 ```
 
 ### Delete folders recursively
 
-```console
+```bash
 root@omarbelkady:~$ rm -r <nameOfDir>
 ```
 
 ### Force Remove A Filled Directory
 
-```console
+```bash
 root@omarbelkady:~$ rm -rf <nameOfDir>
 ```
 
 ### Remove a node_modules directory and its subdirectories in the background
 
-```console
+```bash
 root@omarbelkady:~$ rm -rf node_modules &
 ```
 
 ### Removes an empty directory
 
-```console
+```bash
 root@omarbelkady:~$ rmdir <dirname>
 ```
 
 ### Find out how much memory a directory/file takes
 
-```console
+```bash
 root@omarbelkady:~$ du <nameOfDir/fileName>
 ```
 
 ### Move a directory with its contents to another location
 
-```console
+```bash
 root@omarbelkady:~$ mv -v <ORIGINALPATH> <DESTINATIONPATH>
 ```
 
@@ -311,19 +311,19 @@ unzip -l <fileToextract.zip>
 
 ### Spits Out The Full Path in the Terminal
 
-```console
+```bash
 root@omarbelkady:~$ pwd
 ```
 
 ### Change directory to home
 
-```console
+```bash
 root@omarbelkady:~$ cd ~
 ```
 
 ### List all the packages installed navigate to usr and change your directory to the bin folder and list all the files
 
-```console
+```bash
 root@omarbelkady: ~$ cd ~
 root@omarbelkady: ~$ cd ..
 root@omarbelkady: ~$ cd bin/
@@ -332,13 +332,13 @@ root@omarbelkady: ~$ ls
 
 ### Give root privelleges to for current user
 
-```console
+```bash
 root@omarbelkady: ~$ sudo chmod 777 /
 ```
 
 ### Perform a task that requires administrative privelleges
 
-```console
+```bash
 root@omarbelkady: ~$ sudo chmod 777 /
 ```
 
@@ -350,19 +350,19 @@ root@omarbelkady:~$ su (yourusernamegoeshere)
 
 ### Change directory to root
 
-```console
+```bash
 root@omarbelkady: ~$ cd /
 ```
 
 ### Go up 1 directory
 
-```console
+```bash
 root@omarbelkady:~$ cd .. 
 ```
 
 ### Go back 2 directories
 
-```console
+```bash
 root@omarbelkady:~$ cd ../.. 
 ```
 
@@ -698,55 +698,55 @@ root@omarbelkady:~$ macchanger -r eth0
 
 ### Sorted order of your mac address
 
-```console
+```bash
 root@omarbelkady:~$ ifconfig | grep ether
 ```
 
 ### Disable A Network Interface
 
-```console
+```bash
 root@omarbelkady:~$ ifconfig eth0 down
 ```
 
 ### Enable Promiscuous Mode Within A Network Interface
 
-```console
+```bash
 root@omarbelkady:~$ ifconfig eth0 promisc
 ```
 
 ### Disable Promiscuous Mode Within A Network Interface
 
-```console
+```bash
 root@omarbelkady:~$ ifconfig eth0 -promisc
 ```
 
 ### List the contents of a file as standard output
 
-```console
+```bash
 root@omarbelkady:~$ cat [nameOfFile]
 ```
 
 ### Creates and Extract gzip files
 
-```console
+```bash
 root@omarbelkady:~$ gzip -d [nameOfFile]
 ```
 
 ### To open and unzip a given zip file
 
-```console
+```bash
 root@omarbelkady:~$ unzip [nameOfFile].zip
 ```
 
 ### Reboot From the Terminal
 
-```console
+```bash
 root@omarbelkady:~$ reboot
 ```
 
 ### Kill all Subprocesses
 
-```console
+```bash
 root@omarbelkady:~$ airmon-ng check kill
 ```
 
